@@ -1,6 +1,5 @@
 <script>
   export let data
-  import Component from './component.svelte';
   function checkAvatarImage (avatar) {
     if (avatar.includes('https')) {
       return true
@@ -33,7 +32,6 @@
     {/each}
   </ul>
 
-  <Component message="Custom message" />
 </main>
 
 <style>
