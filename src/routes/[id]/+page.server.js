@@ -6,8 +6,11 @@ export async function load({params}) {
 
   const person = await fetchJson(url)
 
+  // const customData = JSON.parse(person);
   return {
-    person: person.data
+    person: person.data,
+
+    // customData: customData.data
   }
 }
 
