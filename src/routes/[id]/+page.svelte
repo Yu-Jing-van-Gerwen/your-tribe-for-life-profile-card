@@ -6,6 +6,8 @@
     import t from '$lib/images/image.jpg';
     import githublogo from '$lib/images/github-logo.png';
 
+    import Component from '../component.svelte';
+
 </script>
 
 <main>
@@ -43,6 +45,11 @@
         <button >druk voor meer info</button>
 
     </div>
+    <p>
+        dit is het componenet en dit hoort hier niet te staan
+
+        <Component message="Custom message" />
+    </p>
 </main>
 
 <style>

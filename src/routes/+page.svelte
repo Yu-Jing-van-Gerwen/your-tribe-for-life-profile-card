@@ -1,6 +1,6 @@
 <script>
   export let data
-
+  import Component from './component.svelte';
   function checkAvatarImage (avatar) {
     if (avatar.includes('https')) {
       return true
@@ -32,6 +32,8 @@
       </li>
     {/each}
   </ul>
+
+  <Component message="Custom message" />
 </main>
 
 <style>
@@ -58,14 +60,6 @@
     text-decoration:none;
   }
 
-  span {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:5rem;
-    aspect-ratio: 1 / 1;
-    /*font-size: 3rem;*/
-  }
   img {
     max-width:100%;
     aspect-ratio: 1/1;
@@ -78,6 +72,10 @@
 
     box-shadow: 0 0 5px 0 rgba(210, 34, 34, 0.65);
   }
+
+
+
+
   @media (min-width: 705px) {
 
   }
