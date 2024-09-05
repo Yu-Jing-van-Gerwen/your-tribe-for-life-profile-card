@@ -40,7 +40,7 @@
                 </li>
             </ul>
         </section>
-        <button>druk voor meer info</button>
+        <button >druk voor meer info</button>
 
     </div>
 </main>
@@ -73,6 +73,7 @@
             display: flex;
             padding-left: 2em;
             padding-right: 2em;
+            padding-bottom: 2em;
         }
 
         .image {
@@ -124,6 +125,21 @@
         grid-template-columns: 4em 1fr;
 
         padding: 1em;
+    }
+
+    button{
+        box-shadow: none;
+        background: #fff ;
+        font-weight: normal;
+        height: 44px ;
+        width: 13em;
+        border-radius: 0.25rem ;
+        padding: 0.5rem 1.5rem ;
+        margin-right: 12px;
+        margin-top: 12px ;
+        color: var(--funda-blue) ;
+        background-color: white;
+        transform: scale(1.1);
     }
 
 
