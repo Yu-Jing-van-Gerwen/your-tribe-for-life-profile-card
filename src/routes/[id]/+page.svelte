@@ -12,17 +12,18 @@
   <div class="grid-container">
 
     <h1>{data.person.name}  {data.person.prefix}  {data.person.surname}</h1>
-    <section class="">
-      <img class="image" src="{imagefrom}"  alt="Dit is mijn foto" />
-      <h2 class="about-me">Over mij</h2>
-      <p> Leeftijd: 20</p>
-      <p class="bio"> Bio:{data.person.bio}  </p>
-      <p class="vooropleiding">Mijn vooropleiding:<a href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">
-        {data.person.custom} </a></p>
-      <p class="squad">Ik zit in mijn afstudeerjaar</p>
+    <img class="image" src="{imagefrom}"  alt="Dit is mijn foto" />
+    <section class="aboutmesection">
+
+      <h2 class="about-me text">Over mij</h2>
+      <p class="text"> Leeftijd: 20</p>
+      <p class="bio text" > Bio:{data.person.bio}  </p>
+<!--      <p class="vooropleiding text">Mijn vooropleiding:<a href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">-->
+<!--        {data.person.custom} </a></p>-->
+      <p class="squad text">Op dit moment doe ik de opleiding frontend design en developemnt en zit ik in mijn  afstudeerjaar</p>
     </section>
 
-    <section class=""><!--social-media-->
+    <section class="socialmedia"><!--social-media-->
       <h2>Social media</h2>
       <ul>
         <li>
@@ -51,11 +52,10 @@
     justify-content: center;
     align-items: center;
     font-family: open sans, Arial, serif;
+    line-height: 1.5;
   }
 
   .grid-container {
-    justify-items: center;
-    align-items: center;
     border-radius: 1em;
     background: #00ff92;
     background: linear-gradient(0deg, rgba(0, 239, 255, 1) 40%, #4fdd51 100%);
@@ -64,44 +64,31 @@
 
   }
 
-  @media (min-width: 10em) and (max-width: 25em) {
+  @media  (max-width: 705px) {
     .grid-container {
       max-width: 450px;
       background-color: #ffffff;
-      justify-items: center;
-      align-items: center;
+      flex-direction: column;
+      display: flex;
+      padding-left: 2em;
+      padding-right: 2em;
     }
 
     .image {
       width: 217px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
   }
 
-  @media (min-width: 25em) {
 
-    .image {
-      width: 250px;
-      display: block;
-      object-fit: cover;
-
-    }
-
-    p {
-      margin: 0 3em 1.6em 3em;
-      line-height: 1.5;
-    }
-
-  }
 
   h1 {
     color: #000000;
     font-size: 2em;
-    text-align: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .about-me {
@@ -111,23 +98,16 @@
   section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   p {
-    margin: 0 2em 1.6em 2em;
     line-height: 1.5;
   }
 
-  .bio, .vooropleiding, .squad {
-    text-align: center;
-  }
 
   a {
     text-decoration: none;
     color: black;
-    align-items: center;
   }
 
   a:hover {
@@ -135,15 +115,67 @@
   }
 
   ul {
-    margin: 0 3em 1em 1em;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+
   }
 
   li {
     list-style: none;
-    margin: 1em 1em 1em 1em;
+  }
+
+
+  /*ipad en desktop*/
+  @media (min-width: 705px) {
+
+    main{
+      display: flex;
+      align-items: center;
+    }
+
+    .grid-container{
+      display: grid;
+
+
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: auto auto auto;
+      max-width: 600px;
+
+    }
+
+
+    h1{
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+    }
+
+
+    .image {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      width: 250px;
+      display: grid;
+      object-fit: cover;
+
+    }
+    .aboutmesection{
+      grid-row-start: 2;
+      grid-row-end:3 ;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      display: grid;
+    }
+    .socialmedia{
+      grid-row: 3;
+      grid-column: 3;
+    }
+
+
+    section {
+      display: block;
+
+    }
+
   }
 
 </style>
