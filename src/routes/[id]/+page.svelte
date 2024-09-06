@@ -16,32 +16,31 @@
         <img class="image" src="{imagefrom}" alt="Dit is mijn foto"/>
         <section class="aboutme">
 
-            <h2 class="about-me">Over mij</h2>
-            <p class> Leeftijd: 20</p>
-            <p class> Bio:{data.person.bio}  </p>
+            <h2>Over mij</h2>
+            <p> Leeftijd: 20</p>
+            <p> Bio:{data.person.bio}  </p>
             <!--      <p class="vooropleiding ">Mijn vooropleiding:<a href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">-->
             <!--        {data.person.custom} </a></p>-->
-            <p class>Op dit moment doe ik de opleiding frontend design en developemnt en zit ik in mijn
-                afstudeerjaar</p>
+            <p>Ik zit nu in mijn laatste jaar van de opleiding Frontend Design & Development</p>
         </section>
 
         <section class="socialmedia"><!--social-media-->
             <h2>Social media</h2>
-            <ul class="">
+            <ul>
                 <li>
                     <a href="https://github.com/yujing-student">
                         <!--						<img src="/images/github-logo.png" width="40px">-->
-                        <img src={githublogo} alt="GitHub" width="40px"/>
+                        <img class="logoIcons" src={githublogo} alt="GitHub"/>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/yu-jing-van-gerwen-a959431b7/">
-                        <img src={linkedin} alt="GitHub" width="40px"/>
+                        <img class="logoIcons" src={linkedin} alt="GitHub"/>
                     </a>
                 </li>
             </ul>
         </section>
-        <button >druk voor meer info</button>
+        <button>druk voor meer info</button>
 
     </div>
 
@@ -114,33 +113,38 @@
         text-decoration: underline;
     }
 
+    .logoIcons{
+        width: 62px;
+    }
 
     li {
         list-style: none;
     }
 
-    ul{
+    ul {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 4em 1fr;
-        padding: 1em 0 0 0;
+        padding: 1em 1em 0 0;
+        gap: 1em;
 
         margin-top: -1em;
 
     }
 
-    button{
+    button {
         box-shadow: none;
-        background: #fff ;
+        background: #fff;
         font-weight: normal;
-        height: 44px ;
+        height: 44px;
         width: 13em;
-        border-radius: 0.25rem ;
-        padding: 0.5rem 1.5rem ;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1.5rem;
 
 
     }
-    button:hover{
+
+    button:hover {
         transform: scale(1.1);
     }
 
