@@ -14,20 +14,20 @@
 
         <h1>{data.person.name}  {data.person.prefix}  {data.person.surname}</h1>
         <img class="image" src="{imagefrom}" alt="Dit is mijn foto"/>
-        <section class="aboutmesection">
+        <section class="aboutme">
 
             <h2 class="about-me">Over mij</h2>
-            <p class=""> Leeftijd: 20</p>
-            <p class=" "> Bio:{data.person.bio}  </p>
+            <p class> Leeftijd: 20</p>
+            <p class> Bio:{data.person.bio}  </p>
             <!--      <p class="vooropleiding ">Mijn vooropleiding:<a href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">-->
             <!--        {data.person.custom} </a></p>-->
-            <p class=" ">Op dit moment doe ik de opleiding frontend design en developemnt en zit ik in mijn
+            <p class>Op dit moment doe ik de opleiding frontend design en developemnt en zit ik in mijn
                 afstudeerjaar</p>
         </section>
 
         <section class="socialmedia"><!--social-media-->
             <h2>Social media</h2>
-            <ul class="icons-grid">
+            <ul class="">
                 <li>
                     <a href="https://github.com/yujing-student">
                         <!--						<img src="/images/github-logo.png" width="40px">-->
@@ -56,6 +56,7 @@
         align-items: center;
         font-family: open sans, Arial, serif;
         line-height: 1.5;
+        font-size: 18px;
     }
 
     .grid-container {
@@ -94,17 +95,13 @@
         font-size: 2em;
     }
 
-    .about-me {
+    h2 {
         font-size: 1.5em;
     }
 
     section {
         display: flex;
         flex-direction: column;
-    }
-
-    p {
-        line-height: 1.5;
     }
 
 
@@ -121,12 +118,15 @@
     li {
         list-style: none;
     }
-    .icons-grid{
+
+    ul{
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 4em 1fr;
+        padding: 1em 0 0 0;
 
-        padding: 1em;
+        margin-top: -1em;
+
     }
 
     button{
@@ -137,10 +137,10 @@
         width: 13em;
         border-radius: 0.25rem ;
         padding: 0.5rem 1.5rem ;
-        margin-right: 12px;
-        margin-top: 12px ;
-        color: var(--funda-blue) ;
-        background-color: white;
+
+
+    }
+    button:hover{
         transform: scale(1.1);
     }
 
@@ -155,12 +155,11 @@
 
         .grid-container {
             display: grid;
-
-
             grid-template-rows: auto auto auto auto;
             grid-template-columns: auto auto auto;
             max-width: 600px;
-            gap: 2em;
+            row-gap: 0;
+            column-gap: 2em;
             padding: 2em;
 
         }
@@ -179,10 +178,11 @@
             width: 250px;
             display: grid;
             object-fit: cover;
+            margin-top: 1.6em;
 
         }
 
-        .aboutmesection {
+        .aboutme {
             grid-row-start: 2;
             grid-row-end: 3;
             grid-column-start: 2;
@@ -195,11 +195,6 @@
             grid-column: 2;
         }
 
-
-        section {
-            display: block;
-
-        }
 
     }
 
