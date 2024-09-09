@@ -1,14 +1,21 @@
 <script>
-  export let data
-
+  export let data;
 </script>
 
-<main>
-  <h1>Squad 1D</h1>
-  <h2>{data.persons[2].name}</h2>
 
-</main>
+<a href="/person/8">Ga naar een persoon (id:8)</a><br>
 
+
+<!-- Only render if we have people in the data -->
+{#if data.people}
+  {#each data.people as person}
+      <h1>{person.name}</h1>
+    
+  {/each}
+{:else}
+  <!-- This will show if no people are available -->
+  <p>No data available</p>
+{/if}
 <style>
   ul {
     list-style: none;
