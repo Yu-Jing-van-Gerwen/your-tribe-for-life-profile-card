@@ -41,6 +41,15 @@
 
 </main>
 
+<!--
+todo dit toevoegen
+dit toevoegen voor anamitatie
+https://www.w3schools.com/css/css3_animations.asp
+
+dit is voor het draaien
+https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
+
+
 <style>
 
 
