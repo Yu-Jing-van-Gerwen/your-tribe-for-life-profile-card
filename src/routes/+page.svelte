@@ -50,6 +50,7 @@
       align-items: center;
       font-family: open sans, Arial, serif;
       line-height: 1.5;
+      font-size: 18px;
   }
 
   .grid-container {
@@ -73,7 +74,7 @@
       }
 
       .image {
-          width: 265px;
+          width: 284px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -88,17 +89,13 @@
       font-size: 2em;
   }
 
-  .about-me {
+  h2 {
       font-size: 1.5em;
   }
 
   section {
       display: flex;
       flex-direction: column;
-  }
-
-  p {
-      line-height: 1.5;
   }
 
 
@@ -111,30 +108,44 @@
       text-decoration: underline;
   }
 
+  .logoIcons{
+      width: 62px;
+  }
 
   li {
       list-style: none;
   }
-  .icons-grid{
+
+  ul {
       display: grid;
       grid-template-rows: auto;
       grid-template-columns: 4em 1fr;
+      padding: 1em 1em 0 0;
+      gap: 1em;
 
-      padding: 1em;
+      margin-top: -1em;
+
   }
 
-  button{
-      box-shadow: none;
-      background: #fff ;
+  button {
+      box-shadow: 4px 3px 0px 0px;
+      background: #fff;
       font-weight: normal;
-      height: 44px ;
+      height: 44px;
       width: 13em;
-      border-radius: 0.25rem ;
-      padding: 0.5rem 1.5rem ;
-      margin-right: 12px;
-      margin-top: 12px ;
-      color: var(--funda-blue) ;
-      background-color: white;
+      border-radius: 0.25rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 1em;
+
+      grid-row: 3;
+      grid-column: 1;
+      display: grid;
+      margin-top: 1em;
+
+
+  }
+
+  button:hover {
       transform: scale(1.1);
   }
 
@@ -149,12 +160,11 @@
 
       .grid-container {
           display: grid;
-
-
           grid-template-rows: auto auto auto auto;
           grid-template-columns: auto auto auto;
           max-width: 600px;
-          gap: 2em;
+          row-gap: 0;
+          column-gap: 2em;
           padding: 2em;
 
       }
@@ -173,10 +183,11 @@
           width: 250px;
           display: grid;
           object-fit: cover;
+          margin-top: 1.6em;
 
       }
 
-      .aboutmesection {
+      .aboutme {
           grid-row-start: 2;
           grid-row-end: 3;
           grid-column-start: 2;
@@ -188,12 +199,13 @@
           grid-row: 3;
           grid-column: 2;
       }
-
-
-      section {
-          display: block;
-
+      button{
+          grid-row: 3;
+          grid-column: 1;
+          display: grid;
+          margin-top: 1em;
       }
+
 
   }
 
