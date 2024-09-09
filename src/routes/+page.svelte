@@ -7,12 +7,12 @@
 
 <main>
   <div class="grid-container">
-      <h1>{data.person[1].name}  {data.person[1].prefix}  {data.person[1].surname}</h1>
+      <h1>{data.name}  {data.prefix}  {data.surname}</h1>
       <img class="image" src="{imagefrom}" alt="Dit is mijn foto"/>
       <section class="aboutmesection">
           <h2 class="about-me">Over mij</h2>
           <p class=""> Leeftijd: 20</p>
-          <p class=" "> Bio:{data.person[1].bio}  </p>
+          <p class=" "> Bio:{data.bio}  </p>
           <!--      <p class="vooropleiding ">Mijn vooropleiding:<a href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">-->
           <!--        {data.person.custom} </a></p>-->
           <p class=" ">Op dit moment doe ik de opleiding frontend design en developemnt en zit ik in mijn
