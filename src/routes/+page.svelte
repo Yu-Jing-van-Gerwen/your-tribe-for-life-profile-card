@@ -2,20 +2,14 @@
   export let data;
   import linkedin from '$lib/images/linkedin.png';
     import imagefrom from '$lib/images/image.jpg';
-    import t from '$lib/images/image.jpg';
     import githublogo from '$lib/images/github-logo.png';
 </script>
 
-
-
-
 <main>
   <div class="grid-container">
-
       <h1>{data.person[1].name}  {data.person[1].prefix}  {data.person[1].surname}</h1>
       <img class="image" src="{imagefrom}" alt="Dit is mijn foto"/>
       <section class="aboutmesection">
-
           <h2 class="about-me">Over mij</h2>
           <p class=""> Leeftijd: 20</p>
           <p class=" "> Bio:{data.person[1].bio}  </p>
