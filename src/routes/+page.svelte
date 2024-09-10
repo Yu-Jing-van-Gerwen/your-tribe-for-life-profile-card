@@ -20,7 +20,7 @@
 <main>
     <div class="grid-container">
         <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
-        <img class="image" src="{imagefrom}" alt="Dit is mijn foto"/>
+        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>
 <!--        about me section moet een apart component worden-->
         <section class="aboutmesection">
             <h2 class="about-me">Over mij</h2>
@@ -28,7 +28,7 @@
             <p class=" ">{data.persons.bio}  </p>
             <!--      <p class="vooropleiding ">Mijn vooropleiding:<a href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">-->
             <!--        {data.person.custom} </a></p>-->
-            <p class=" ">Op dit moment doe ik de opleiding frontend design en developemnt en zit ik in mijn
+            <p class=" ">Op dit moment doe ik de opleiding frontend design en development en zit ik in mijn
                 afstudeerjaar</p>
         </section>
        <SocialMedia/>
@@ -39,12 +39,6 @@
 
 </main>
 
-<h1>Hello {name}!</h1>
-<button on:click="{toggleName}">Toggle name</button>
-<p>
-    Visit the <a href="https://learn.svelte.dev/">Svelte tutorial</a> to learn
-    how to build Svelte apps.
-</p>
 <!--
 todo dit toevoegen
 dit toevoegen voor anamitatie
