@@ -3,9 +3,18 @@
     import linkedin from '$lib/images/linkedin.png';
     import imagefrom from '$lib/images/image.jpg';
     import githublogo from '$lib/images/github-logo.png';
-    import button from "./button.svelte";
-    import text from './text.svelte';
+    import Nested from './MoreInfo.svelte';
+    import ActionButton from './button.svelte';
+    import SocialMedia from './Socialmedia.svelte';
+    export let name;
 
+    function toggleName() {
+        if (name === "world") {
+            name = "Svelte";
+        } else {
+            name = "world";
+        }
+    }
 </script>
 
 <main>
@@ -22,39 +31,20 @@
             <p class=" ">Op dit moment doe ik de opleiding frontend design en developemnt en zit ik in mijn
                 afstudeerjaar</p>
         </section>
-
-<!--        dit deel scoial media moet een apart component worden-->
-        <section class="socialmedia"><!--social-media-->
-            <h2>Social media</h2>
-            <ul class="icons-grid">
-                <li>
-                    <a href="https://github.com/yujing-student">
-                        <!--						<img src="/images/github-logo.png" width="40px">-->
-                        <img src={githublogo} alt="GitHub" width="40px"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/yu-jing-van-gerwen-a959431b7/">
-                        <img src={linkedin} alt="GitHub" width="40px"/>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <button>druk voor meer info
-        </button>
-
+       <SocialMedia/>
+        <ActionButton />
     </div>
-<!--    todo dit moet een apart componenet worden-->
-    <section class="hidden">
-        <h2>meer over mij</h2>
-        <p>In de sportschool is mijn doel nu om meer spieren op te bouwen </p>
-    </section>
 
-
+    <Nested />
 
 </main>
 
+<h1>Hello {name}!</h1>
+<button on:click="{toggleName}">Toggle name</button>
+<p>
+    Visit the <a href="https://learn.svelte.dev/">Svelte tutorial</a> to learn
+    how to build Svelte apps.
+</p>
 <!--
 todo dit toevoegen
 dit toevoegen voor anamitatie
@@ -65,8 +55,6 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
 
 
 <style>
-
-
     main {
         display: grid;
         justify-content: center;
@@ -126,89 +114,6 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
         text-decoration: underline;
     }
 
-    li {
-        list-style: none;
-    }
-
-    ul {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 4em 1fr;
-        padding: 1em 1em 0 0;
-        gap: 1em;
-
-        margin-top: -1em;
-
-    }
-
-    button {
-        box-shadow: 4px 3px 0px 0px;
-        background: #fff;
-        font-weight: normal;
-        height: 44px;
-        width: 13em;
-        border-radius: 0.25rem;
-        padding: 0.5rem 1.5rem;
-        font-size: 1em;
-
-        grid-row: 3;
-        grid-column: 1;
-        display: grid;
-        margin-top: 1em;
-
-
-    }
-
-    button:hover {
-        background-color: red;
-
-    }
-    .hidden{
-        border-radius: 1em;
-        background: #00ff92;
-        background: linear-gradient(0deg, rgba(0, 239, 255, 1) 40%, #4fdd51 100%);
-        box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
-        max-width: 450px;
-        padding: 2em;
-        display: grid;
-    }
-
-    /*animatie*/
-
-    .hidden {
-        animation: fadeIn 5s;
-        -webkit-animation: fadeIn 5s;
-        -moz-animation: fadeIn 5s;
-        -o-animation: fadeIn 5s;
-        -ms-animation: fadeIn 5s;
-    }
-
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-    @-moz-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-    @-webkit-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-    @-o-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-    @-ms-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-
     /*ipad en desktop*/
     @media (min-width: 705px) {
         .grid-container {
@@ -239,24 +144,6 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
             margin-top: 1.6em;
 
         }
-
-        .socialmedia {
-            grid-row: 3;
-            grid-column: 2;
-        }
-        .hidden{
-            grid-row: 5;
-            grid-column-start: 1;
-            grid-column-end: 3;
-        }
-
-        button {
-            grid-row: 3;
-            grid-column: 1;
-            display: grid;
-            margin-top: 1em;
-        }
-
 
     }
 

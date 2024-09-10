@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 
 <button>druk voor meer info
 </button>
@@ -22,6 +18,11 @@
         display: grid;
         margin-top: 1em;
 
+
+    }
+
+    button:hover {
+        color: red;
 
     }
 
