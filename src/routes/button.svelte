@@ -1,7 +1,7 @@
+<!--https://dev.to/webdeasy/top-20-css-buttons-animations-f41-->
 
-
-<button class="wrapper">
-    <a href="#"><span>druk voor meer info</span></a>
+<button class="">
+    <a href=""><span>druk voor meer info</span></a>
 </button>
 
 <style>
@@ -23,11 +23,6 @@
 
     }
 
-    button:hover {
-        color: white;
-        background-color: red;
-
-    }
 
     button{
         display: block;
@@ -47,6 +42,7 @@
     a span{
         position: relative;
         z-index: 2;
+        color: black;
     }
 
     a:after{
