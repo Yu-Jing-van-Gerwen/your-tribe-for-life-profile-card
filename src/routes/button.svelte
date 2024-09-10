@@ -1,5 +1,7 @@
 
-<button>druk voor meer info
+
+<button class="wrapper">
+    <a href="#"><span>druk voor meer info</span></a>
 </button>
 
 <style>
@@ -22,8 +24,48 @@
     }
 
     button:hover {
-        color: red;
+        color: white;
+        background-color: red;
 
+    }
+
+    button{
+        display: block;
+        width: 271px;
+        height: 58px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+    }
+
+    a span{
+        position: relative;
+        z-index: 2;
+    }
+
+    a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff003b;
+        transition: all .35s;
+    }
+
+    a:hover{
+        color: #fff;
+    }
+
+    a:hover:after{
+        width: 100%;
     }
 
 </style>

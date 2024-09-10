@@ -73,6 +73,7 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
 
     }
 
+
     @media (max-width: 705px) {
         .grid-container {
             max-width: 450px;
