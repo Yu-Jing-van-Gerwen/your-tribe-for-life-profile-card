@@ -6,15 +6,6 @@
     import Nested from './MoreInfo.svelte';
     import ActionButton from './button.svelte';
     import SocialMedia from './Socialmedia.svelte';
-    export let name;
-
-    function toggleName() {
-        if (name === "world") {
-            name = "Svelte";
-        } else {
-            name = "world";
-        }
-    }
 </script>
 
 <main>
