@@ -3,16 +3,17 @@
   import linkedin from '$lib/images/linkedin.png';
     import imagefrom from '$lib/images/image.jpg';
     import githublogo from '$lib/images/github-logo.png';
+    import button from "./button.svelte";
 </script>
 
 <main>
   <div class="grid-container">
-      <h1>{data.name}  {data.prefix}  {data.surname}</h1>
+      <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
       <img class="image" src="{imagefrom}" alt="Dit is mijn foto"/>
       <section class="aboutmesection">
           <h2 class="about-me">Over mij</h2>
           <p class=""> Leeftijd: 20</p>
-          <p class=" "> Bio:{data.bio}  </p>
+          <p class=" ">{data.persons.bio}  </p>
           <!--      <p class="vooropleiding ">Mijn vooropleiding:<a href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">-->
           <!--        {data.person.custom} </a></p>-->
           <p class=" ">Op dit moment doe ik de opleiding frontend design en developemnt en zit ik in mijn
@@ -35,9 +36,12 @@
               </li>
           </ul>
       </section>
-      <button >druk voor meer info</button>
+
+      <button>druk voor meer info
+      </button>
 
   </div>
+
 
 </main>
 
@@ -154,10 +158,6 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
 
   }
 
-  button:hover {
-      transform: scale(1.1);
-  }
-
 
   /*ipad en desktop*/
   @media (min-width: 705px) {
@@ -217,5 +217,9 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
 
 
   }
+
+
+
+
 
 </style>
