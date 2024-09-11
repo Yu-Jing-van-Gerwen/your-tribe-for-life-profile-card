@@ -1,2 +1,2 @@
-export let csr = false
+export let csr = true
 

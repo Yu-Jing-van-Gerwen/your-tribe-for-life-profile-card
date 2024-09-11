@@ -132,6 +132,68 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
         }
 
     }
+/*    aantekeningen les
+feature dtecking
+scroll-snap-type
+@support
 
+https://github.com/joostf/squadpage-sveltekit/tree/creative-coding-csr
+voorbeeld van de les
+
+svelte intelligence visual studio code
+
+  @supports (animation-timeline: scroll()) {
+    ul li {
+        view-timeline-name: --happy-scroller;
+        view-timeline-axis: inline;
+        view-timeline-inset: -10% -10%;
+        animation-range: 25% 25%;
+
+        animation: linear appear both;
+        animation-timeline: --happy-scroller;
+    }
+
+    ul li a {
+        animation: linear appear both;
+        animation-timeline: --happy-scroller;
+    }
+
+    @keyframes appear {
+        0% {
+            rotate:-10deg;
+            opacity:.1;
+            scale:.5;
+        }
+        50% {
+            opacity:1;
+            scale:1;
+            rotate:0;
+        }
+        100% {
+            opacity: .1;
+            scale:.5;
+            rotate: 10deg;
+        }
+    }
+  }
+
+*/
+
+    /*onmount gebruiken sveltekit */
+
+    /*bij csr = false de animatie werkt niet*/
+
+/*    als de csr false is dan word de static map niet gebruikt
+ als csr true is dan word svelte.js onderwater naar de server
+
+
+ */
+
+
+/*
+
+
+
+*/
 
 </style>
