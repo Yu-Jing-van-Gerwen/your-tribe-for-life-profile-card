@@ -1,9 +1,7 @@
-<script>
-
-</script>
-
-
-<button>druk voor meer info
+<!--https://dev.to/webdeasy/top-20-css-buttons-animations-f41-->
+<!--https://codepen.io/twhite96/embed/brryVq?height=600&default-tab=result&embed-version=2#result-box-->
+<button class="moreinfo">
+    <a href=""><span>druk voor meer info</span></a>
 </button>
 
 <style>
@@ -23,6 +21,47 @@
         margin-top: 1em;
 
 
+    }
+
+
+    button{
+        display: block;
+        width: 271px;
+        height: 58px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+    }
+
+    a span{
+        position: relative;
+        z-index: 2;
+        color: black;
+    }
+
+    a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff003b;
+        transition: all .35s;
+    }
+
+    a:hover{
+        color: #fff;
+    }
+
+    a:hover:after{
+        width: 100%;
     }
 
 </style>
