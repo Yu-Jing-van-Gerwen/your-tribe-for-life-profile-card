@@ -7,7 +7,21 @@
     import ActionButton from './button.svelte';
     import SocialMedia from './Socialmedia.svelte';
     import { fade } from 'svelte/transition';
-    let visible = true;
+
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        const buttonMore = document.querySelector('.moreinfo');
+        const div = document.querySelector('.nonvisible');
+
+        div.classList.add("nonvisible-open");
+
+        buttonMore.addEventListener('click', () => {
+            div.classList.toggle("hidden");
+        });
+    });
+
+    // let visible = true;
 </script>
 
 <main>
@@ -27,15 +41,16 @@
        <SocialMedia/>
         <ActionButton />
     </div>
+    <Moreinfo/>
 
 
-    <label>
-        <input type="checkbox" bind:checked={visible} />
-        visible
-    </label>
-    {#if visible}
-        <p transition:fade> <Moreinfo /></p>
-    {/if}
+<!--    <label>-->
+<!--        <input type="checkbox" bind:checked={visible} />-->
+<!--        visible-->
+<!--    </label>-->
+<!--    {#if visible}-->
+<!--        <p transition:fade> <Moreinfo /></p>-->
+<!--    {/if}-->
 
 </main>
 

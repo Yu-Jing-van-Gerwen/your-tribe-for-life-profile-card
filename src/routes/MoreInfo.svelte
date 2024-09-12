@@ -1,9 +1,18 @@
+<div class="nonvisible">
+
 <section class="hidden">
     <h2>meer over mij</h2>
     <p>In de sportschool is mijn doel nu om meer spieren op te bouwen </p>
 </section>
+</div>
 
 <style>
+    .nonvisible{
+        display: none;
+    }
+    .nonvisible-open{
+        display: block;
+    }
     .hidden{
         border-radius: 1em;
         background: #00ff92;
@@ -27,7 +36,7 @@
     .hidden {
         animation: fadeIn 5s;
         -webkit-animation: fadeIn 5s;
-        -moz-animation: fadeIn 5s;
+        -moz-animation: fadeIn 2s;
         -o-animation: fadeIn 5s;
         -ms-animation: fadeIn 5s;
     }
