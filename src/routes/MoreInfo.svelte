@@ -34,11 +34,11 @@
     /*animatie*/
 
     .hidden {
-        animation: fadeIn 5s;
-        -webkit-animation: fadeIn 5s;
+        animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
         -moz-animation: fadeIn 2s;
-        -o-animation: fadeIn 5s;
-        -ms-animation: fadeIn 5s;
+        -o-animation: fadeIn 2s;
+        -ms-animation: fadeIn 2s;
     }
 
     @keyframes fadeIn {
