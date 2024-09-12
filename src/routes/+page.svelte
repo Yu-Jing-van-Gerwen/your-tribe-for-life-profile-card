@@ -1,8 +1,5 @@
 <script>
     export let data;
-    import linkedin from '$lib/images/linkedin.png';
-    import imagefrom from '$lib/images/image.jpg';
-    import githublogo from '$lib/images/github-logo.png';
     import Moreinfo from './MoreInfo.svelte';
     import ActionButton from './button.svelte';
     import SocialMedia from './Socialmedia.svelte';
@@ -21,7 +18,6 @@
         });
     });
 
-    // let visible = true;
 </script>
 
 <main>
@@ -42,16 +38,6 @@
         <ActionButton />
     </div>
     <Moreinfo/>
-
-
-<!--    <label>-->
-<!--        <input type="checkbox" bind:checked={visible} />-->
-<!--        visible-->
-<!--    </label>-->
-<!--    {#if visible}-->
-<!--        <p transition:fade> <Moreinfo /></p>-->
-<!--    {/if}-->
-
 </main>
 
 <!--
