@@ -28,7 +28,7 @@
         <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>
 <!--        about me section moet een apart component worden-->
         <section class="aboutmesection">
-            <h2 class="about-me">Over mij</h2>
+            <h2>Over mij</h2>
             <p class=""> Leeftijd: 20</p>
             <p class=" ">{data.persons.bio}  </p>
             <p class=" ">Op dit moment doe ik de opleiding frontend design en development en zit ik in mijn
@@ -70,6 +70,9 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
     }
 
 
+
+
+
     @media (max-width: 705px) {
         .grid-container {
             max-width: 450px;
@@ -79,10 +82,21 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
             padding-left: 2em;
             padding-right: 2em;
             padding-bottom: 2em;
+            position: absolute;
+            top: 2em;
+            animation: slideInLeftMobile 5s forwards;
+        }
+        @keyframes slideInLeftMobile {
+            0% {
+                top: -100%;
+            }
+            100% {
+                top: 0;
+            }
         }
 
         .image {
-            width: 284px;
+            width: 245px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -121,7 +135,18 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
             row-gap: 0;
             column-gap: 2em;
             padding: 2em;
+            top: 0;
+            left: -100%;
+            animation: slideInLeft 5s forwards;
 
+        }
+        @keyframes slideInLeft {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 15%;
+            }
         }
 
 
@@ -142,5 +167,24 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
 
         }
 
+    }
+
+
+    @media (min-width: 805px) {
+        .grid-container {
+            position: absolute;
+
+            animation: slideInLeftDesktop 5s forwards;
+
+        }
+
+        @keyframes slideInLeftDesktop {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 10%;
+            }
+        }
     }
 </style>
