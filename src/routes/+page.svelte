@@ -15,6 +15,8 @@
 
         buttonMore.addEventListener('click', () => {
             div.classList.toggle("hidden");
+            buttonMore.scrollIntoView('.nonvisible-open')
+            buttonMore.disabled='true';
         });
     });
 
@@ -29,8 +31,6 @@
             <h2 class="about-me">Over mij</h2>
             <p class=""> Leeftijd: 20</p>
             <p class=" ">{data.persons.bio}  </p>
-            <!--      <p class="vooropleiding ">Mijn vooropleiding:<a href="https://www.regiocollege.nl/mbo-opleiding/softwaredeveloper">-->
-            <!--        {data.person.custom} </a></p>-->
             <p class=" ">Op dit moment doe ik de opleiding frontend design en development en zit ik in mijn
                 afstudeerjaar</p>
         </section>
@@ -62,7 +62,8 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
     .grid-container {
         border-radius: 1em;
         background: #00ff92;
-        background: linear-gradient(0deg, rgba(0, 239, 255, 1) 40%, #4fdd51 100%);
+        /*background: linear-gradient(0deg, rgba(0, 239, 255, 1) 40%, #4fdd51 100%);*/
+        background: linear-gradient(0deg, #00EFEF 40%, #4FDD51 100%);
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
         max-width: 450px;
 
@@ -142,68 +143,4 @@ https://www.w3schools.com/css/css3_3dtransforms.asp zo'n animaite-->
         }
 
     }
-/*    aantekeningen les
-feature dtecking
-scroll-snap-type
-@support
-
-https://github.com/joostf/squadpage-sveltekit/tree/creative-coding-csr
-voorbeeld van de les
-
-svelte intelligence visual studio code
-
-  @supports (animation-timeline: scroll()) {
-    ul li {
-        view-timeline-name: --happy-scroller;
-        view-timeline-axis: inline;
-        view-timeline-inset: -10% -10%;
-        animation-range: 25% 25%;
-
-        animation: linear appear both;
-        animation-timeline: --happy-scroller;
-    }
-
-    ul li a {
-        animation: linear appear both;
-        animation-timeline: --happy-scroller;
-    }
-
-    @keyframes appear {
-        0% {
-            rotate:-10deg;
-            opacity:.1;
-            scale:.5;
-        }
-        50% {
-            opacity:1;
-            scale:1;
-            rotate:0;
-        }
-        100% {
-            opacity: .1;
-            scale:.5;
-            rotate: 10deg;
-        }
-    }
-  }
-
-*/
-
-    /*onmount gebruiken sveltekit */
-
-    /*bij csr = false de animatie werkt niet*/
-
-/*    als de csr false is dan word de static map niet gebruikt
- als csr true is dan word svelte.js onderwater naar de server
-
-
- */
-
-
-/*
-
-
-
-*/
-
 </style>

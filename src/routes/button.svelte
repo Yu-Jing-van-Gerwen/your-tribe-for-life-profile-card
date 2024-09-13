@@ -1,12 +1,12 @@
 <!--https://dev.to/webdeasy/top-20-css-buttons-animations-f41-->
 <!--https://codepen.io/twhite96/embed/brryVq?height=600&default-tab=result&embed-version=2#result-box-->
 <button class="moreinfo">
-    <a href=""><span>druk voor meer info</span></a>
+    <a href="#moreinfo"><span>druk voor meer info</span></a>
 </button>
 
 <style>
     button {
-        box-shadow: 4px 3px 0px 0px;
+        box-shadow: 14px 13px 0px 0px;
         background: #fff;
         font-weight: normal;
         height: 44px;
@@ -39,6 +39,7 @@
         transition: all .35s;
     }
 
+
     a span{
         position: relative;
         z-index: 2;
@@ -52,7 +53,7 @@
         left: 0;
         width: 0;
         height: 100%;
-        background: #ff003b;
+        background: linear-gradient(0deg, #00EFEF 40%, #4FDD51 100%);
         transition: all .35s;
     }
 
