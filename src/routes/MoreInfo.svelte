@@ -10,6 +10,7 @@
     .nonvisible{
         display: none;
     }
+    /*dit word met javascript gebruikt dus noodzakelijk*/
     .nonvisible-open{
         display: block;
         background-color: #ffffff;
@@ -17,8 +18,6 @@
 
     .hidden{
         border-radius: 1em;
-        /*background: #00ff92;*/
-        /*background: linear-gradient(0deg, rgba(0, 239, 255, 1) 40%, #4fdd51 100%);*/
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
         max-width: 450px;
         padding: 2em;
@@ -26,6 +25,7 @@
     }
 
     /*animatie*/
+    /*https://codepen.io/hubspot/embed/ExWxByR?height=384.6151123046875&theme-id=39533&default-tab=css%2Cresult&slug-hash=ExWxByR&editable=true&user=hubspot&name=cp_embed_2#result-box*/
 
     .hidden {
         animation: fadeIn 2s;
