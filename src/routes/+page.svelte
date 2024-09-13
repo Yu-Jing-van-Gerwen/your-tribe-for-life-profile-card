@@ -36,6 +36,7 @@
         </section>
        <SocialMedia/>
         <ActionButton />
+
     </div>
     <Moreinfo/>
 </main>

@@ -9,10 +9,13 @@
 <style>
     .nonvisible{
         display: none;
+
     }
     .nonvisible-open{
-        display: block;
+        display: grid;
         background-color: #ffffff;
+
+        /*top: 55em;*/
     }
 
     .hidden{
@@ -22,8 +25,9 @@
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
         max-width: 450px;
         padding: 2em;
-        display: grid;
+
     }
+    /*todo fixen dat het 2de witte blok tegelijkertijd meegaat met de andere animatie als dat kan */
 
     /*animatie*/
 
@@ -33,7 +37,17 @@
         -moz-animation: fadeIn 2s;
         -o-animation: fadeIn 2s;
         -ms-animation: fadeIn 2s;
+        /*animation: slideInLeftMobile 5s forwards;*/
+
     }
+    /*@keyframes slideInLeftMobile {*/
+    /*    0% {*/
+    /*        top: -100%;*/
+    /*    }*/
+    /*    100% {*/
+    /*        top: 0;*/
+    /*    }*/
+    /*}*/
 
     @keyframes fadeIn {
         0% { opacity: 0; }
