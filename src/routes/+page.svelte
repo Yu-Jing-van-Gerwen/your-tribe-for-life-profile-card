@@ -1,8 +1,10 @@
 <script>
+    import linkedin from "$lib/images/linkedin.png";
+
     export let data;
-    import Moreinfo from './MoreInfo.svelte';
-    import ActionButton from './button.svelte';
-    import SocialMedia from './Socialmedia.svelte';
+    import Moreinfo from '$lib/MoreInfo.svelte';
+    import ActionButton from '$lib/button.svelte';
+    import SocialMedia from '$lib/Socialmedia.svelte';
     import { fade } from 'svelte/transition';
 
     import { onMount } from 'svelte';
@@ -27,7 +29,20 @@
 <main>
     <div class="grid-container">
         <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
-        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>
+<!--        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>-->
+        <picture>
+            <source
+                    srcset="{data.persons.avatar}?format=avif"
+                    type="image/avif"
+                    alt="foto van mij"
+            />
+            <source
+                    srcset="{data.persons.avatar}?format=webp"
+                    type="image/webp"
+                    alt="foto van mij"
+            />
+            <img class="image" src={data.persons.avatar} alt="foto van mij"/>
+        </picture>
 <!--        about me section moet een apart component worden-->
         <section class="aboutmesection">
             <h2 class="about-me">Over mij</h2>

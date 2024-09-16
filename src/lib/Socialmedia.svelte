@@ -36,7 +36,7 @@
                     <source
                             srcset="{linkedin}?format=webp"
                             type="image/webp"
-                            alt="logo linkedin"
+                            alt="{linkedin}"
                     />
                     <img class="logo" src={linkedin} alt="GitHub"/>
                 </picture>
