@@ -84,7 +84,8 @@
             min-width: 180px;
         }
         .image {
-            min-width:191px;
+            min-width:170px;
+            max-width: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -103,15 +104,11 @@
             padding-right: 2em;
             padding-bottom: 2em;
         }
-
-        .image {
-            min-width: 180px;
-        max-width: 284px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+        .image{
+            min-width:200px;
+            max-width: 250px;
         }
+
 
     }
 
