@@ -1,12 +1,13 @@
 <!--https://dev.to/webdeasy/top-20-css-buttons-animations-f41-->
 <!--https://codepen.io/twhite96/embed/brryVq?height=600&default-tab=result&embed-version=2#result-box-->
-<button class="moreinfo">
-    <a href="#moreinfo"><span>druk voor meer info</span></a>
-</button>
+
+<!--de span is noodzakelijk vanege de tekst-->
+    <a  class="moreinfo" href="#moreinfo"><span>druk voor meer info</span></a>
+
 
 <style>
-    button {
-        box-shadow: 14px 13px 0px 0px;
+    .moreinfo {
+        box-shadow: 8px 9px 0px 0px;
         background: #fff;
         font-weight: normal;
         height: 44px;
@@ -14,7 +15,6 @@
         border-radius: 0.25rem;
         padding: 0.5rem 1.5rem;
         font-size: 1em;
-
         grid-row: 3;
         grid-column: 1;
         display: grid;
@@ -24,10 +24,9 @@
     }
 
 
-    button{
+    .moreinfo{
         display: block;
-        width: 271px;
-        height: 58px;
+        width: 200px;
         line-height: 40px;
         font-size: 18px;
         font-family: sans-serif;

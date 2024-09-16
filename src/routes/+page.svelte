@@ -60,13 +60,27 @@
         background: linear-gradient(0deg, #00EFEF 40%, #4FDD51 100%);
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
         max-width: 450px;
+        padding: 2em;
 
+    }
+
+    @media (max-width: 400px) {
+        .grid-container {
+            min-width: 180px;
+        }
+        .image {
+            min-width:191px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
     }
 
 
     @media (max-width: 705px) {
         .grid-container {
-            max-width: 450px;
+            /*max-width: 450px;*/
             background-color: #ffffff;
             flex-direction: column;
             display: flex;
@@ -76,7 +90,8 @@
         }
 
         .image {
-            width: 284px;
+            min-width: 180px;
+        max-width: 284px;
             display: flex;
             justify-content: center;
             align-items: center;

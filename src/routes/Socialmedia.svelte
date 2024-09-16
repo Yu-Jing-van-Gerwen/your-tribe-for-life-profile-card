@@ -10,12 +10,36 @@
         <li>
             <a href="https://github.com/yujing-student">
                 <!--						<img src="/images/github-logo.png" width="40px">-->
-                <img src={githublogo} alt="GitHub" width="40px"/>
+                <picture>
+                    <source
+                            srcset="{githublogo}?format=avif"
+                            type="image/avif"
+                            alt={githublogo}
+                    />
+                    <source
+                            srcset="{githublogo}?format=webp"
+                            type="image/webp"
+                            alt="logo github"
+                    />
+                    <img class="logo" src={githublogo} alt="GitHub"/>
+                </picture>
             </a>
         </li>
         <li>
             <a href="https://www.linkedin.com/in/yu-jing-van-gerwen-a959431b7/">
-                <img src={linkedin} alt="GitHub" width="40px"/>
+                <picture>
+                    <source
+                            srcset="{linkedin}?format=avif"
+                            type="image/avif"
+                            alt={linkedin}
+                    />
+                    <source
+                            srcset="{linkedin}?format=webp"
+                            type="image/webp"
+                            alt="logo linkedin"
+                    />
+                    <img class="logo" src={linkedin} alt="GitHub"/>
+                </picture>
             </a>
         </li>
     </ul>
@@ -38,5 +62,8 @@
 
         margin-top: -1em;
 
+    }
+    .logo{
+        width: 40px;
     }
 </style>
