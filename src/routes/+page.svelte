@@ -16,8 +16,8 @@
     <div class="full-container">
 
 
-    <div class="grid-container">
-        <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
+    <div class="grid-container ">
+        <h1 class="animationfade">{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
 <!--        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>-->
         <picture>
             <source
@@ -75,6 +75,16 @@
         /*position: absolute;*/
         /*animation: slideInLeftMobile 5s forwards;*/
 
+    }
+    .aboutmesection{
+        box-shadow: 14px 13px 0px 0px;
+        background: #fff;
+        font-weight: normal;
+        width: 13em;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1.5rem;
+        display: grid;
+        margin-top: 1em;
     }
 
 
@@ -163,6 +173,7 @@
         }
 
 
+
         h1 {
             grid-column-start: 1;
             grid-column-end: 4;
@@ -180,5 +191,37 @@
 
         }
 
+    }
+    .animationfade {
+        animation: fadeIntest 5s;
+        -webkit-animation: fadeIntest 2s;
+        -moz-animation: fadeIntest 2s;
+        -o-animation: fadeIntest 2s;
+        -ms-animation: fadeIntest 2s;
+    }
+
+    @keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 3; }
+    }
+
+    @-moz-keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 3; }
+    }
+
+    @-webkit-keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 3; }
+    }
+
+    @-o-keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 3; }
+    }
+
+    @-ms-keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 3; }
     }
 </style>
