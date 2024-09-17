@@ -7,7 +7,7 @@
 
     export let data;
 </script>
-<section class="socialmedia whitebackground"><!--social-media-->
+<section class="socialmedia whitebackground animationfade"><!--social-media-->
     <h2>Social media</h2>
     <ul class="icons-grid">
         <li>
@@ -75,5 +75,37 @@
         padding: 0.5rem 1.5rem;
         display: grid;
         margin-top: 1em;
+    }
+    .animationfade {
+        animation: fadeIntest 12s;
+        -webkit-animation: fadeIntest 10s;
+        -moz-animation: fadeIntest 12s;
+        -o-animation: fadeIntest 12s;
+        -ms-animation: fadeIntest 12s;
+    }
+
+    @keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @-moz-keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @-webkit-keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @-o-keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @-ms-keyframes fadeIntest {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 </style>

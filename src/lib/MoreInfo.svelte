@@ -12,7 +12,9 @@
     }
     /*dit word met javascript gebruikt dus noodzakelijk*/
     .nonvisible-open{
-        display: block;
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
         background-color: #ffffff;
     }
 
@@ -22,6 +24,7 @@
         max-width: 450px;
         padding: 2em;
         display: grid;
+        z-index: 10;
     }
 
     /*animatie*/

@@ -7,8 +7,8 @@
     import SocialMedia from '$lib/Socialmedia.svelte';
 
     // dit zijn functies die je kan gebrruiken in svelte nu niet noodzakelijk
-    import { fade } from 'svelte/transition';
-    import { onMount } from 'svelte';
+    import {fade} from 'svelte/transition';
+    import {onMount} from 'svelte';
 
 </script>
 
@@ -16,35 +16,35 @@
     <div class="full-container">
 
 
-    <div class="grid-container ">
-        <h1 class="animationfade">{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
-<!--        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>-->
-        <picture>
-            <source
-                    srcset="{data.persons.avatar}?format=webp"
-                    type="image/webp"
+        <div class="grid-container ">
+            <h1 class="">{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
+            <!--        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>-->
+            <picture>
+                <source
+                        srcset="{data.persons.avatar}?format=webp"
+                        type="image/webp"
 
-            />
-            <source
-                    srcset="{data.persons.avatar}?format=avif"
-                    type="image/avif"
-            />
+                />
+                <source
+                        srcset="{data.persons.avatar}?format=avif"
+                        type="image/avif"
+                />
 
-            <img class="image" src={data.persons.avatar} alt="foto van mij"/>
-        </picture>
-<!--        about me section moet een apart component worden-->
-        <section class="whitebackground">
-            <h2 class="about-me">Over mij</h2>
-            <p class=""> Leeftijd: 20</p>
-            <p class=" ">{data.persons.bio}  </p>
-            <p class=" ">Op dit moment doe ik de opleiding frontend design en development en zit ik in mijn
-                afstudeerjaar</p>
-        </section>
-       <SocialMedia/>
-        <ActionButton />
-    </div>
+                <img class="image" src={data.persons.avatar} alt="foto van mij"/>
+            </picture>
+            <!--        about me section moet een apart component worden-->
+            <section class="whitebackground animationfade">
+                <h2 class="about-me">Over mij</h2>
+                <p class=""> Leeftijd: 20</p>
+                <p class=" ">{data.persons.bio}  </p>
+                <p class=" ">Op dit moment doe ik de opleiding frontend design en development en zit ik in mijn
+                    afstudeerjaar</p>
+            </section>
+            <SocialMedia/>
+            <ActionButton/>
+        </div>
 
-    <Moreinfo/>
+<!--        <Moreinfo/>-->
 
     </div>
 
@@ -60,8 +60,12 @@
         line-height: 1.5;
         font-size: 18px;
     }
-    .full-container{
-        position: absolute;
+
+    .full-container {
+        position: fixed;
+        /*display: grid;*/
+        /*grid-template-rows: auto auto;*/
+        /*grid-template-columns: auto 1fr;*/
     }
 
     .grid-container {
@@ -72,12 +76,14 @@
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
         max-width: 450px;
         padding: 2em;
-        cursor: grab;
-        /*position: absolute;*/
-        /*animation: slideInLeftMobile 5s forwards;*/
+        cursor: move;
+        position: absolute;
+        animation: slideInLeftMobile 5s forwards;
+        grid-row: 1;
 
     }
-    .whitebackground{
+
+    .whitebackground {
         box-shadow: 14px 13px 0px 0px;
         background: #fff;
         font-weight: normal;
@@ -93,8 +99,9 @@
         .grid-container {
             min-width: 180px;
         }
+
         .image {
-            min-width:170px;
+            min-width: 170px;
             max-width: 200px;
             display: flex;
             justify-content: center;
@@ -105,10 +112,11 @@
 
 
     @media (max-width: 705px) {
-        .full-container{
+        .full-container {
 
             animation: slideInLeftMobile 5s forwards;
         }
+
         .grid-container {
             /*max-width: 450px;*/
             background-color: #ffffff;
@@ -117,6 +125,7 @@
             padding: 0 2em 2em 2em;
 
         }
+
         @keyframes slideInLeftMobile {
             0% {
                 top: -100%;
@@ -126,8 +135,8 @@
                 top: 0;
             }
         }
-        .image{
-            min-width:200px;
+        .image {
+            min-width: 200px;
             max-width: 250px;
         }
 
@@ -154,22 +163,22 @@
             row-gap: 1em;
             column-gap: 3em;
             padding: 2em;
-            /*position: fixed;*/
-            /*animation: slideInDesktop 5s forwards;*/
 
         }
 
-        .full-container{
+        .full-container {
             animation: slideInDesktop 5s forwards;
         }
+
         @keyframes slideInDesktop {
             0% {
                 left: -100%;
-                top: 7%; /* Center vertically */
+                top: 5%;
+                /*top: 7%; !* Center vertically *!*/
             }
             100% {
-                left: 5%; /* Center horizontally */
-                top: 7%; /* Center vertically */
+                left: 15%; /* Center horizontally */
+                /*top: 7%; !* Center vertically *!*/
             }
         }
 
@@ -194,36 +203,57 @@
         }
 
     }
+
     .animationfade {
-        animation: fadeIntest 5s;
-        -webkit-animation: fadeIntest 2s;
-        -moz-animation: fadeIntest 2s;
-        -o-animation: fadeIntest 2s;
-        -ms-animation: fadeIntest 2s;
+        animation: fadeIntest 12s;
+        -webkit-animation: fadeIntest 10s;
+        -moz-animation: fadeIntest 12s;
+        -o-animation: fadeIntest 12s;
+        -ms-animation: fadeIntest 12s;
     }
 
     @keyframes fadeIntest {
-        0% { opacity: 0; }
-        100% { opacity: 3; }
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     @-moz-keyframes fadeIntest {
-        0% { opacity: 0; }
-        100% { opacity: 3; }
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     @-webkit-keyframes fadeIntest {
-        0% { opacity: 0; }
-        100% { opacity: 3; }
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     @-o-keyframes fadeIntest {
-        0% { opacity: 0; }
-        100% { opacity: 3; }
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     @-ms-keyframes fadeIntest {
-        0% { opacity: 0; }
-        100% { opacity: 3; }
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 </style>
