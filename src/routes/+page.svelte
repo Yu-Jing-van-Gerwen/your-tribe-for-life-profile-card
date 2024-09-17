@@ -32,14 +32,15 @@
 <!--        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>-->
         <picture>
             <source
-                    srcset="{data.persons.avatar}?format=avif"
-                    type="image/avif"
-            />
-            <source
                     srcset="{data.persons.avatar}?format=webp"
                     type="image/webp"
 
             />
+            <source
+                    srcset="{data.persons.avatar}?format=avif"
+                    type="image/avif"
+            />
+
             <img class="image" src={data.persons.avatar} alt="foto van mij"/>
         </picture>
 <!--        about me section moet een apart component worden-->
