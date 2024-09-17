@@ -7,7 +7,7 @@
 
     export let data;
 </script>
-<section class="socialmedia"><!--social-media-->
+<section class="socialmedia whitebackground"><!--social-media-->
     <h2>Social media</h2>
     <ul class="icons-grid">
         <li>
@@ -65,5 +65,15 @@
     }
     .logo{
         width: 40px;
+    }
+    .whitebackground{
+        box-shadow: 14px 13px 0px 0px;
+        background: #fff;
+        font-weight: normal;
+        /*width: 13em;*/
+        border-radius: 0.25rem;
+        padding: 0.5rem 1.5rem;
+        display: grid;
+        margin-top: 1em;
     }
 </style>

@@ -33,7 +33,7 @@
             <img class="image" src={data.persons.avatar} alt="foto van mij"/>
         </picture>
 <!--        about me section moet een apart component worden-->
-        <section class="aboutmesection">
+        <section class="whitebackground">
             <h2 class="about-me">Over mij</h2>
             <p class=""> Leeftijd: 20</p>
             <p class=" ">{data.persons.bio}  </p>
@@ -72,11 +72,12 @@
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
         max-width: 450px;
         padding: 2em;
+        cursor: grab;
         /*position: absolute;*/
         /*animation: slideInLeftMobile 5s forwards;*/
 
     }
-    .aboutmesection{
+    .whitebackground{
         box-shadow: 14px 13px 0px 0px;
         background: #fff;
         font-weight: normal;
@@ -150,8 +151,8 @@
             grid-template-rows: auto auto auto auto;
             grid-template-columns: auto auto auto;
             max-width: 600px;
-            row-gap: 0;
-            column-gap: 2em;
+            row-gap: 1em;
+            column-gap: 3em;
             padding: 2em;
             /*position: fixed;*/
             /*animation: slideInDesktop 5s forwards;*/
@@ -188,6 +189,7 @@
             display: grid;
             object-fit: cover;
             margin-top: 1.6em;
+            height: 25em;
 
         }
 
