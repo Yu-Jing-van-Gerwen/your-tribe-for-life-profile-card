@@ -12,19 +12,21 @@
     }
     /*dit word met javascript gebruikt dus noodzakelijk*/
     .nonvisible-open{
-        display: grid;
-        grid-column: 1;
-        grid-row: 2;
+        /*display: grid;*/
+        /*grid-column: 1;*/
+        /*grid-row: 5;*/
+        display: block;
         background-color: #ffffff;
     }
 
     .hidden{
         border-radius: 1em;
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
-        max-width: 450px;
+        /*max-width: 450px;*/
         padding: 2em;
         display: grid;
         z-index: 10;
+        background-color: yellow;
     }
 
     /*animatie*/

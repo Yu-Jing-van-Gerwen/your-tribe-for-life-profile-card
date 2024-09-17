@@ -44,7 +44,7 @@
             <ActionButton/>
         </div>
 
-<!--        <Moreinfo/>-->
+        <Moreinfo/>
 
     </div>
 
