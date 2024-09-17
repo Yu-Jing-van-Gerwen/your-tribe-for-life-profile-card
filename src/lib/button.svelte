@@ -2,7 +2,27 @@
 <!--https://codepen.io/twhite96/embed/brryVq?height=600&default-tab=result&embed-version=2#result-box-->
 
 <!--de span is noodzakelijk vanege de tekst-->
-    <a  class="moreinfo" href="#moreinfo"><span>druk voor meer info</span></a>
+
+<script>
+    import {onMount} from "svelte";
+    let buttonMore;
+    let div;
+    function showmore() {
+        buttonMore = document.querySelector('.moreinfo');
+        div = document.querySelector('.nonvisible');
+        div.classList.toggle("hidden");
+        div.classList.add("nonvisible-open");
+
+        buttonMore.scrollIntoView('.nonvisible-open')
+        buttonMore.disabled = true;
+    }
+</script>
+<!--    <a  class="moreinfo" href="#moreinfo"><span>druk voor meer info</span></a>-->
+<a href="#info" on:click={showmore} class="moreinfo">
+    <span>druk voor meer info</span>
+</a>
+
+
 
 
 <style>

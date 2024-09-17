@@ -5,24 +5,10 @@
     import Moreinfo from '$lib/MoreInfo.svelte';
     import ActionButton from '$lib/button.svelte';
     import SocialMedia from '$lib/Socialmedia.svelte';
+
+    // dit zijn functies die je kan gebrruiken in svelte nu niet noodzakelijk
     import { fade } from 'svelte/transition';
-
     import { onMount } from 'svelte';
-
-    onMount(() => {
-        const buttonMore = document.querySelector('.moreinfo');
-        const div = document.querySelector('.nonvisible');
-
-        div.classList.add("nonvisible-open");
-
-        buttonMore.addEventListener('click', () => {
-            div.classList.toggle("hidden");
-            buttonMore.scrollIntoView('.nonvisible-open')
-            buttonMore.disabled='true';
-        });
-    });
-
-
 
 </script>
 
@@ -55,6 +41,7 @@
         <ActionButton />
     </div>
     <Moreinfo/>
+
 </main>
 
 
