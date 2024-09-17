@@ -27,7 +27,7 @@
 
 <style>
     .moreinfo {
-        box-shadow: 8px 9px 0px 0px;
+        box-shadow: 14px 13px 0px 0px;
         background: #fff;
         font-weight: normal;
         height: 44px;
@@ -35,6 +35,7 @@
         border-radius: 0.25rem;
         padding: 0.5rem 1.5rem;
         font-size: 1em;
+
         grid-row: 3;
         grid-column: 1;
         display: grid;
@@ -72,12 +73,13 @@
         left: 0;
         width: 0;
         height: 100%;
-        background: linear-gradient(0deg, #00EFEF 40%, #4FDD51 100%);
+        /*background: linear-gradient(0deg, #baff73 40%, #4f91dd 100%);*/
+        background-color: orange;
         transition: all .35s;
     }
 
     a:hover{
-        color: #fff;
+        /*color: red;*/
     }
 
     a:hover:after{

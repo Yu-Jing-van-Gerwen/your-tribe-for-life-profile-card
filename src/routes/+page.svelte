@@ -63,6 +63,8 @@
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
         max-width: 450px;
         padding: 2em;
+        /*position: absolute;*/
+        /*animation: slideInLeftMobile 5s forwards;*/
 
     }
 
@@ -87,9 +89,16 @@
             background-color: #ffffff;
             flex-direction: column;
             display: flex;
-            padding-left: 2em;
-            padding-right: 2em;
-            padding-bottom: 2em;
+            padding: 0 2em 2em 2em;
+
+        }
+        @keyframes slideInLeftMobile {
+            0% {
+                top: -100%;
+            }
+            100% {
+                top: 0;
+            }
         }
         .image{
             min-width:200px;
@@ -119,7 +128,20 @@
             row-gap: 0;
             column-gap: 2em;
             padding: 2em;
+            /*position: fixed;*/
+            /*animation: slideInDesktop 5s forwards;*/
 
+        }
+
+        @keyframes slideInDesktop {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 25%; /* Center horizontally */
+                top: 20%; /* Center vertically */
+                /*transform: translate(20%, -50%); !* Adjust for centering *!*/
+            }
         }
 
 
