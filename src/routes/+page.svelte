@@ -13,6 +13,9 @@
 </script>
 
 <main>
+    <div class="full-container">
+
+
     <div class="grid-container">
         <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
 <!--        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>-->
@@ -40,7 +43,10 @@
        <SocialMedia/>
         <ActionButton />
     </div>
+
     <Moreinfo/>
+
+    </div>
 
 </main>
 
@@ -53,6 +59,9 @@
         font-family: open sans, Arial, serif;
         line-height: 1.5;
         font-size: 18px;
+    }
+    .full-container{
+        position: absolute;
     }
 
     .grid-container {
@@ -67,6 +76,7 @@
         /*animation: slideInLeftMobile 5s forwards;*/
 
     }
+
 
     @media (max-width: 400px) {
         .grid-container {
@@ -84,6 +94,10 @@
 
 
     @media (max-width: 705px) {
+        .full-container{
+
+            animation: slideInLeftMobile 5s forwards;
+        }
         .grid-container {
             /*max-width: 450px;*/
             background-color: #ffffff;
@@ -95,6 +109,7 @@
         @keyframes slideInLeftMobile {
             0% {
                 top: -100%;
+                /*left: 25%;*/
             }
             100% {
                 top: 0;
@@ -133,14 +148,17 @@
 
         }
 
+        .full-container{
+            animation: slideInDesktop 5s forwards;
+        }
         @keyframes slideInDesktop {
             0% {
                 left: -100%;
+                top: 7%; /* Center vertically */
             }
             100% {
-                left: 25%; /* Center horizontally */
-                top: 20%; /* Center vertically */
-                /*transform: translate(20%, -50%); !* Adjust for centering *!*/
+                left: 5%; /* Center horizontally */
+                top: 7%; /* Center vertically */
             }
         }
 
