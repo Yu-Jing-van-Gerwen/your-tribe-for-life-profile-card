@@ -28,18 +28,18 @@
         </li>
         <li>
             <a href="https://www.linkedin.com/in/yu-jing-van-gerwen-a959431b7/">
-                <picture>
+<!--                <picture>-->
 
-                    <source
-                            srcset="{linkedin}?format=webp"
-                            type="image/webp"
-                    />
-                    <source
-                            srcset="{linkedin}?format=avif"
-                            type="image/avif"
-                    />
+<!--                    <source-->
+<!--                            srcset="{linkedin}?format=webp"-->
+<!--                            type="image/webp"-->
+<!--                    />-->
+<!--                    <source-->
+<!--                            srcset="{linkedin}?format=avif"-->
+<!--                            type="image/avif"-->
+<!--                    />-->
                     <img class="logo" src={linkedin} alt="linkedin"/>
-                </picture>
+<!--                </picture>-->
             </a>
         </li>
     </ul>
