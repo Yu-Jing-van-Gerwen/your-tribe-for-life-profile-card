@@ -14,12 +14,10 @@
                     <source
                             srcset="{githublogo}?format=avif"
                             type="image/avif"
-                            alt={githublogo}
                     />
                     <source
                             srcset="{githublogo}?format=webp"
                             type="image/webp"
-                            alt="logo github"
                     />
                     <img class="logo" src={githublogo} alt="GitHub"/>
                 </picture>
@@ -31,14 +29,12 @@
                     <source
                             srcset="{linkedin}?format=avif"
                             type="image/avif"
-                            alt={linkedin}
                     />
                     <source
                             srcset="{linkedin}?format=webp"
                             type="image/webp"
-                            alt="{linkedin}"
                     />
-                    <img class="logo" src={linkedin} alt="GitHub"/>
+                    <img class="logo" src={linkedin} alt="linkedin"/>
                 </picture>
             </a>
         </li>

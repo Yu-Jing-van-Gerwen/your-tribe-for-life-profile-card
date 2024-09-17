@@ -34,12 +34,11 @@
             <source
                     srcset="{data.persons.avatar}?format=avif"
                     type="image/avif"
-                    alt="foto van mij"
             />
             <source
                     srcset="{data.persons.avatar}?format=webp"
                     type="image/webp"
-                    alt="foto van mij"
+
             />
             <img class="image" src={data.persons.avatar} alt="foto van mij"/>
         </picture>
