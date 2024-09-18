@@ -27,6 +27,7 @@
         display: grid;
         z-index: 10;
         background-color: yellow;
+        grid-row: 6;
     }
 
     /*animatie*/

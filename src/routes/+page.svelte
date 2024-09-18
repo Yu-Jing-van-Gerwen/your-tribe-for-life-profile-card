@@ -42,9 +42,10 @@
             </section>
             <SocialMedia/>
             <ActionButton/>
+            <Moreinfo/>
         </div>
 
-        <Moreinfo/>
+
 
     </div>
 
@@ -59,10 +60,11 @@
         font-family: open sans, Arial, serif;
         line-height: 1.5;
         font-size: 18px;
+        scroll-behavior: smooth;
     }
 
     .full-container {
-        position: fixed;
+        position: absolute;
         /*display: grid;*/
         /*grid-template-rows: auto auto;*/
         /*grid-template-columns: auto 1fr;*/
@@ -76,7 +78,7 @@
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
         max-width: 450px;
         padding: 2em;
-        cursor: move;
+        /*cursor: move;*/
         position: absolute;
         animation: slideInLeftMobile 5s forwards;
         grid-row: 1;
@@ -198,7 +200,7 @@
             display: grid;
             object-fit: cover;
             margin-top: 1.6em;
-            height: 25em;
+            /*height: 25em;*/
 
         }
 
