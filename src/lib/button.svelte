@@ -34,20 +34,15 @@
         width: 13em;
         border-radius: 0.25rem;
         padding: 0.5rem 1.5rem;
-        font-size: 1em;
+        /*font-size: 1em;*/
 
         grid-row: 3;
         grid-column: 1;
         display: grid;
         margin-top: 1em;
 
-
-    }
-
-
-    .moreinfo{
-        display: block;
-        width: 200px;
+        /*display: block;*/
+        /*width: 200px;*/
         line-height: 40px;
         font-size: 18px;
         font-family: sans-serif;
@@ -57,7 +52,24 @@
         text-align: center;
         position: relative;
         transition: all .35s;
+
+
     }
+
+
+    /*.moreinfo{*/
+    /*    display: block;*/
+    /*    width: 200px;*/
+    /*    line-height: 40px;*/
+    /*    font-size: 18px;*/
+    /*    font-family: sans-serif;*/
+    /*    text-decoration: none;*/
+    /*    color: #333;*/
+    /*    letter-spacing: 2px;*/
+    /*    text-align: center;*/
+    /*    position: relative;*/
+    /*    transition: all .35s;*/
+    /*}*/
 
 
     a span{
