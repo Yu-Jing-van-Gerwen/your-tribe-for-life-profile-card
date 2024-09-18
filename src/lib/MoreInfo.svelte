@@ -26,8 +26,10 @@
         padding: 2em;
         display: grid;
         z-index: 10;
-        background-color: yellow;
+        background-color: white;
         grid-row: 6;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
     /*animatie*/

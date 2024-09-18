@@ -32,6 +32,7 @@
 
                 <img class="image" src={data.persons.avatar} alt="foto van mij"/>
             </picture>
+            <ActionButton/>
             <!--        about me section moet een apart component worden-->
             <section class="whitebackground animationfade">
                 <h2 class="about-me">Over mij</h2>
@@ -41,7 +42,7 @@
                     afstudeerjaar</p>
             </section>
             <SocialMedia/>
-            <ActionButton/>
+
             <Moreinfo/>
         </div>
 
@@ -200,7 +201,7 @@
             display: grid;
             object-fit: cover;
             margin-top: 1.6em;
-            /*height: 25em;*/
+            height: 25em;
 
         }
 
