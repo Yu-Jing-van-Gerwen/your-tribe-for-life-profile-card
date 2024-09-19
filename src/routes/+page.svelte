@@ -11,6 +11,7 @@
 
 <main>
 
+
         <div>
             <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
             <picture>
@@ -85,8 +86,8 @@
 
         div:nth-child(1) {
             animation: slideInLeftMobile 5s forwards;
-            min-width: 200px;
-            max-width: 300px;
+            /*min-width: 200px;*/
+            width: 300px;
         }
         @keyframes slideInLeftMobile {
             0% {
@@ -133,6 +134,9 @@
             min-width: 200px;
             max-width: 260px;
             object-fit: cover;
+        }
+        section{
+            width: 260px;
         }
 
 
