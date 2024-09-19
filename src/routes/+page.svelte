@@ -11,7 +11,7 @@
 
 <main>
 <!--    zonder deze div full container is er geen animatie-->
-    <div class="full-container">
+    <div class=div:nth-child(1)>
 
 
         <div class="grid-container ">
@@ -62,12 +62,13 @@
         scroll-behavior: smooth;
     }
 
-    .full-container {
+
+    div:nth-child(1){
         position: absolute;
-        /*display: grid;*/
-        /*grid-template-rows: auto auto;*/
-        /*grid-template-columns: auto 1fr;*/
     }
+    /*div:nth-child(1) {*/
+    /*    position: absolute;*/
+    /*}*/
 
     .grid-container {
         border-radius: 1em;
@@ -92,28 +93,15 @@
         border-radius: 0.25rem;
         padding: 0.5rem 1.5rem;
         display: grid;
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
 
 
-    @media (max-width: 400px) {
-        .grid-container {
-            min-width: 180px;
-        }
 
-        .image {
-            min-width: 170px;
-            max-width: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-    }
 
 
     @media (max-width: 705px) {
-        .full-container {
+        div:nth-child(1) {
 
             animation: slideInLeftMobile 5s forwards;
         }
@@ -134,6 +122,7 @@
             }
             100% {
                 top: 0;
+                left: 5%;
             }
         }
         .image {
@@ -158,7 +147,7 @@
     @media (min-width: 705px) {
         .grid-container {
             display: grid;
-            grid-template-rows: auto auto auto auto;
+            grid-template-rows: 4em auto auto auto;
             grid-template-columns: auto auto auto;
             max-width: 600px;
             row-gap: 1em;
@@ -167,7 +156,7 @@
 
         }
 
-        .full-container {
+        div:nth-child(1) {
             animation: slideInDesktop 5s forwards;
         }
 
@@ -178,7 +167,7 @@
                 /*top: 7%; !* Center vertically *!*/
             }
             100% {
-                left: 15%; /* Center horizontally */
+                left: 5%; /* Center horizontally */
                 /*top: 7%; !* Center vertically *!*/
             }
         }
@@ -203,6 +192,41 @@
 
         }
 
+    }
+
+    @media (min-width: 1200px) {
+        div:nth-child(1) {
+            animation: slideInDesktop1200px 5s forwards;
+        }
+
+        @keyframes slideInDesktop1200px {
+            0% {
+                left: -100%;
+                top: 5%;
+                /*top: 7%; !* Center vertically *!*/
+            }
+            100% {
+                left: 15%; /* Center horizontally */
+                /*top: 7%; !* Center vertically *!*/
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        div:nth-child(1) {
+            animation: slideInDesktop1400px 5s forwards;
+        }
+
+        @keyframes slideInDesktop1400px {
+            0% {
+                left: -100%;
+                top: 5%;
+                /*top: 7%; !* Center vertically *!*/
+            }
+            100% {
+                left: 20%; /* Center horizontally */
+                /*top: 7%; !* Center vertically *!*/
+            }
+        }
     }
 
     .animationfade {

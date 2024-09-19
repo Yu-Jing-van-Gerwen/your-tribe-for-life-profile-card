@@ -27,6 +27,17 @@
 
 
 <style>
+
+    @media (max-width: 704px) {
+        .moreinfo {
+            margin: 2em 0 0 2em;
+        }
+    }
+    @media (min-width: 705px) {
+        .moreinfo {
+            margin: 0;
+        }
+    }
     .moreinfo {
 
         background: #fff;
@@ -50,6 +61,8 @@
         transition: all .35s;
 
     }
+
+
 
     /*https://www.florin-pop.com/blog/2019/03/css-pulse-effect/*/
     .pulse{
