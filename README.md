@@ -1,5 +1,3 @@
-https://github.com/fdnd-task/your-tribe-for-life-profile-card/blob/main/docs/INSTRUCTIONS.md
-
 # Profile card
 
 In dit project heb ik een profielkaartje gemaakt in svelte
@@ -15,6 +13,9 @@ In dit project heb ik een profielkaartje gemaakt in svelte
 
 
 ## Beschrijving
+
+![image](https://github.com/user-attachments/assets/d6ad8997-7d23-4554-8590-9cc3b128a1d8)
+
 In dit profielkaartje zie je informatie over mij en kan je mijn werk op github zien en contact met mij opnemen op linkedin
 Dit profielkaartje is een schoolopdracht en daarin moet ik met het framework sveltekit en de cms directus data ophalen uit de database en deze data
 laten zien in mijn profielkaartje 
@@ -23,6 +24,8 @@ laten zien in mijn profielkaartje
 [//]: # (<a href="https://github.com/fdnd-task/your-tribe-for-life-profile-card/blob/main/docs/INSTRUCTIONS.md">link naar de instruct</a>)
 
 <a href="https://your-tribe-for-life-profile-card-gold.vercel.app/">live link</a>
+
+
 
 
 <!-- Voeg een mooie poster visual toe (Gebruik aub <img src=".." height=... width=...> -->
@@ -36,7 +39,16 @@ laten zien in mijn profielkaartje
 
 
 ## Installatie
-Volg deze stappen om dit project lokaal op te zetten:
+zorg dat je dit geinstalleerd hebt voordat je dit project lokaal wilt gaan gebruiken
+
+<ul>
+   <li>
+      cod editor zoals visual studio code of webstorm
+   </li>
+</ul>
+
+
+Volg deze stappen om dit project lokaal op te zetten in de terminal van je code editor:
 1. Clone de repository:
    ```bash
    git clone https://github.com/yujing-student/your-tribe-for-life-profile-card.git
@@ -56,7 +68,7 @@ Volg deze stappen om dit project lokaal op te zetten:
    npm run dev
    ```
    
-wil je vanaf scratch een sveltekit project opstarten ga naar <a href="# Creating a project">create a project</a>
+wil je vanaf scratch een sveltekit project opstarten ga naar <a href="https://github.com/yujing-student/your-tribe-for-life-profile-card?tab=readme-ov-file#creating-a-project">create a project</a>
 
 ## Gebruik
 Je kan de website gebruiken als een introductie pagina voor de squad leden uit squad C en D
