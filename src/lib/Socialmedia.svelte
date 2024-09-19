@@ -75,6 +75,7 @@
         padding: 0.5rem 1.5rem;
         display: grid;
         margin-top: 1em;
+        margin-bottom: 2em;
     }
     .animationfade {
         animation: fadeIntest 12s;

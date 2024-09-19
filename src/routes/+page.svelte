@@ -57,7 +57,7 @@
         align-items: center;
         font-family: open sans, Arial, serif;
         line-height: 1.5;
-        font-size: 18px;
+        font-size: 16px;
         scroll-behavior: smooth;
     }
 
@@ -65,21 +65,16 @@
     div:nth-child(1){
         position: absolute;
     }
-    /*div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*}*/
-
     .grid-container {
         border-radius: 1em;
         background: #00ff92;
         /*background: linear-gradient(0deg, rgba(0, 239, 255, 1) 40%, #4fdd51 100%);*/
         background: linear-gradient(0deg, #00EFEF 40%, #4FDD51 100%);
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
-        max-width: 450px;
         padding: 2em;
         /*cursor: move;*/
         position: absolute;
-        animation: slideInLeftMobile 5s forwards;
+
         grid-row: 1;
 
     }
@@ -88,30 +83,16 @@
         /*box-shadow: 14px 13px 0px 0px;*/
         background: #fff;
         font-weight: normal;
-        width: 13em;
         border-radius: 0.25rem;
         padding: 0.5rem 1.5rem;
         display: grid;
         margin-top: 1.5em;
     }
 
-
-
-
-
     @media (max-width: 705px) {
         div:nth-child(1) {
 
             animation: slideInLeftMobile 5s forwards;
-        }
-
-        .grid-container {
-            /*max-width: 450px;*/
-            background-color: #ffffff;
-            flex-direction: column;
-            display: flex;
-            padding: 0 2em 2em 2em;
-
         }
 
         @keyframes slideInLeftMobile {
@@ -127,6 +108,14 @@
         img {
             min-width: 200px;
             max-width: 250px;
+        }
+
+        .grid-container {
+            animation: slideInLeftMobile 5s forwards;
+            min-width: 200px;
+            max-width: 400px;
+
+
         }
 
 
@@ -152,7 +141,11 @@
             row-gap: 1em;
             column-gap: 3em;
             padding: 2em;
+            min-width: 450px;
 
+        }
+        section{
+            width: 13em;
         }
 
         div:nth-child(1) {

@@ -28,30 +28,97 @@
 
 <style>
 
-    @media (max-width: 704px) {
-        .moreinfo {
-            margin: 2em 0 0 2em;
-        }
-    }
-    @media (min-width: 705px) {
-        .moreinfo {
-            margin: 0;
-        }
-    }
-    .moreinfo {
+    /*@media (max-width: 704px) {*/
+    /*    .moreinfo {*/
+    /*        margin: 0em 0 0 0em;*/
+    /*        border-radius: 4px;*/
+    /*        padding: 16px;*/
 
-        background: #fff;
-        font-weight: normal;
-        height: 44px;
-        width: 196px;
+    /*        width: 150px;*/
+    /*        font-size: 16px;*/
+    /*        height: 44px;*/
+
+
+    /*        grid-row: 3;*/
+    /*        grid-column: 1;*/
+    /*        display: grid;*/
+    /*        margin-top: 1em;*/
+    /*        line-height: 40px;*/
+
+    /*        font-family: sans-serif;*/
+    /*        text-decoration: none;*/
+    /*        color: #333;*/
+    /*        letter-spacing: 2px;*/
+    /*        text-align: center;*/
+    /*        position: relative;*/
+    /*        transition: all .35s;*/
+
+    /*    }*/
+    /*}*/
+    /*@media (min-width: 705px) {*/
+    /*    .moreinfo {*/
+    /*        margin: 0em 0 0 0em;*/
+    /*        border-radius: 4px;*/
+    /*        padding: 16px;*/
+
+    /*        width: 196px;*/
+    /*        font-size: 18px;*/
+    /*        height: 44px;*/
+
+
+    /*        grid-row: 3;*/
+    /*        grid-column: 1;*/
+    /*        display: grid;*/
+    /*        margin-top: 1em;*/
+    /*        line-height: 40px;*/
+
+    /*        font-family: sans-serif;*/
+    /*        text-decoration: none;*/
+    /*        color: #333;*/
+    /*        letter-spacing: 2px;*/
+    /*        text-align: center;*/
+    /*        position: relative;*/
+    /*        transition: all .35s;*/
+    /*    }*/
+    /*}*/
+    /*.moreinfo {*/
+    /*    margin: 0em 0 0 0em;*/
+    /*    border-radius: 4px;*/
+    /*    padding: 16px;*/
+
+    /*    width: 196px;*/
+    /*    font-size: 18px;*/
+    /*    height: 44px;*/
+
+
+    /*    grid-row: 3;*/
+    /*    grid-column: 1;*/
+    /*    display: grid;*/
+    /*    margin-top: 1em;*/
+    /*    line-height: 40px;*/
+
+    /*    font-family: sans-serif;*/
+    /*    text-decoration: none;*/
+    /*    color: #333;*/
+    /*    letter-spacing: 2px;*/
+    /*    text-align: center;*/
+    /*    position: relative;*/
+    /*    transition: all .35s;*/
+    /*    background: #fff;*/
+    /*    font-weight: normal;*/
+
+
+    /*}*/
+
+    .moreinfo {
+       margin: 0 0 0 1em;
         border-radius: 4px;
         padding: 16px;
+        display: grid;
         grid-row: 3;
         grid-column: 1;
-        display: grid;
         margin-top: 1em;
         line-height: 40px;
-        font-size: 18px;
         font-family: sans-serif;
         text-decoration: none;
         color: #333;
@@ -59,9 +126,21 @@
         text-align: center;
         position: relative;
         transition: all .35s;
+        background: #fff;
+        font-weight: normal;
 
+        @media (max-width: 704px) {
+            width: 180px;
+            font-size: 16px;
+            height: 44px;
+        }
+
+        @media (min-width: 705px) {
+            width: 196px;
+            font-size: 18px;
+            height: 44px;
+        }
     }
-
 
 
     /*https://www.florin-pop.com/blog/2019/03/css-pulse-effect/*/
