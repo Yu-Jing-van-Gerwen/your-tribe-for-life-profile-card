@@ -51,7 +51,6 @@
     }
 
 
-    /*https://www.florin-pop.com/blog/2019/03/css-pulse-effect/*/
     .pulse{
         animation: pulse 2s infinite;
         box-shadow: 14px 13px 0 0;

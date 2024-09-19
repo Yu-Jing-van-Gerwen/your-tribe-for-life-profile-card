@@ -80,12 +80,42 @@
     }
 
 
-    @media (max-width: 705px) {
+    @media (max-width: 400px) {
 
 
         div:nth-child(1) {
             animation: slideInLeftMobile 5s forwards;
             min-width: 200px;
+            max-width: 300px;
+        }
+        @keyframes slideInLeftMobile {
+            0% {
+                top: -100%;
+            }
+            100% {
+                top: 0;
+                left: 5%;
+            }
+        }
+
+
+        img {
+            min-width: 200px;
+            max-width: 260px;
+            object-fit: cover;
+        }
+
+
+
+    }
+
+
+    @media (min-width: 400px) {
+
+
+        div:nth-child(1) {
+            animation: slideInLeftMobile 5s forwards;
+            min-width: 300px;
             max-width: 400px;
         }
         @keyframes slideInLeftMobile {
@@ -101,13 +131,13 @@
 
         img {
             min-width: 200px;
-            max-width: 250px;
+            max-width: 260px;
+            object-fit: cover;
         }
 
 
 
     }
-
 
 
 

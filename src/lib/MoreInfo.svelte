@@ -1,6 +1,6 @@
 <div class="nonvisible">
 
-<section class="hidden" id="">
+<section class="hidden">
     <h2>meer over mij</h2>
     <p>In de sportschool is mijn doel nu om meer spieren op te bouwen </p>
 </section>
