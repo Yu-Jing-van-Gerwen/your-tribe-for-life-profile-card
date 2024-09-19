@@ -10,13 +10,12 @@
 </script>
 
 <main>
-<!--    zonder deze div full container is er geen animatie-->
-    <div class=div:nth-child(1)>
+
+    <div>
 
 
         <div class="grid-container ">
-            <h1 class="">{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
-            <!--        <img class="image" src="{data.persons.avatar}" alt="Dit is mijn foto"/>-->
+            <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
             <picture>
                 <source
                         srcset="{data.persons.avatar}?format=webp"
@@ -28,15 +27,15 @@
                         type="image/avif"
                 />
 
-                <img class="image" src={data.persons.avatar} alt="foto van mij"/>
+                <img  src={data.persons.avatar} alt="foto van mij"/>
             </picture>
 
             <!--        about me section moet een apart component worden-->
-            <section class="whitebackground animationfade">
-                <h2 class="about-me">Over mij</h2>
-                <p class=""> Leeftijd: 20</p>
-                <p class=" ">{data.persons.bio}  </p>
-                <p class=" ">Op dit moment doe ik de opleiding frontend design en development en zit ik in mijn
+            <section class="animationfade">
+                <h2>Over mij</h2>
+                <p> Leeftijd: 20</p>
+                <p>{data.persons.bio}  </p>
+                <p>Op dit moment doe ik de opleiding frontend design en development en zit ik in mijn
                     afstudeerjaar</p>
             </section>
             <SocialMedia/>
@@ -85,7 +84,7 @@
 
     }
 
-    .whitebackground {
+    section {
         /*box-shadow: 14px 13px 0px 0px;*/
         background: #fff;
         font-weight: normal;
@@ -125,7 +124,7 @@
                 left: 5%;
             }
         }
-        .image {
+        img {
             min-width: 200px;
             max-width: 250px;
         }
@@ -181,7 +180,7 @@
         }
 
 
-        .image {
+        img {
             grid-row-start: 2;
             grid-column-start: 1;
             width: 250px;
