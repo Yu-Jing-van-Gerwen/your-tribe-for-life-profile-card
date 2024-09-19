@@ -67,7 +67,7 @@
         width: 40px;
     }
     .whitebackground{
-        box-shadow: 14px 13px 0px 0px;
+        /*box-shadow: 14px 13px 0px 0px;*/
         background: #fff;
         font-weight: normal;
         /*width: 13em;*/

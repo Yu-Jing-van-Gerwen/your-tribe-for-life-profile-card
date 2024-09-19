@@ -13,6 +13,7 @@
 </script>
 
 <main>
+<!--    zonder deze div full container is er geen animatie-->
     <div class="full-container">
 
 
@@ -87,7 +88,7 @@
     }
 
     .whitebackground {
-        box-shadow: 14px 13px 0px 0px;
+        /*box-shadow: 14px 13px 0px 0px;*/
         background: #fff;
         font-weight: normal;
         width: 13em;
