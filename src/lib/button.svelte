@@ -31,18 +31,13 @@
         background: #fff;
         font-weight: normal;
         height: 44px;
-        width: 13em;
-        border-radius: 0.25rem;
-        padding: 0.5rem 1.5rem;
-        /*font-size: 1em;*/
-
+        width: 196px;
+        border-radius: 4px;
+        padding: 16px;
         grid-row: 3;
         grid-column: 1;
         display: grid;
         margin-top: 1em;
-
-        /*display: block;*/
-        /*width: 200px;*/
         line-height: 40px;
         font-size: 18px;
         font-family: sans-serif;
@@ -52,24 +47,24 @@
         text-align: center;
         position: relative;
         transition: all .35s;
-
-
+        animation: pulse 2s infinite;
     }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        }
 
+        50% {
+            transform: scale(1.25);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        }
 
-    /*.moreinfo{*/
-    /*    display: block;*/
-    /*    width: 200px;*/
-    /*    line-height: 40px;*/
-    /*    font-size: 18px;*/
-    /*    font-family: sans-serif;*/
-    /*    text-decoration: none;*/
-    /*    color: #333;*/
-    /*    letter-spacing: 2px;*/
-    /*    text-align: center;*/
-    /*    position: relative;*/
-    /*    transition: all .35s;*/
-    /*}*/
+        100% {
+            transform: scale(1.3);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+    }
 
 
     a span{
