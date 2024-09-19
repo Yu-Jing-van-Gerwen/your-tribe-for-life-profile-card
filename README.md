@@ -1,6 +1,6 @@
 # Profile card
 
-In dit project heb ik een profielkaartje gemaakt met het framework svelte en ik heb de data opgehaald uit de cms van directus 
+In dit project heb ik een profielkaartje gemaakt met het framework svelte en ik heb de data opgehaald uit de cms van directus.
 
 ## Inhoudsopgave
 
@@ -16,9 +16,9 @@ In dit project heb ik een profielkaartje gemaakt met het framework svelte en ik 
 
 ![image](https://github.com/user-attachments/assets/d6ad8997-7d23-4554-8590-9cc3b128a1d8)
 
-In dit profielkaartje zie je informatie over mij en kan je mijn werk op github zien en contact met mij opnemen op linkedin
+In dit profielkaartje zie je informatie over mij en kan je mijn werk op github zien en contact met mij opnemen op linkedin.
 Dit profielkaartje is een schoolopdracht en daarin moet ik met het framework sveltekit en de cms directus data ophalen uit de database en deze data
-laten zien in mijn profielkaartje 
+laten zien in mijn profielkaartje. 
 
 
 [//]: # (<a href="https://github.com/fdnd-task/your-tribe-for-life-profile-card/blob/main/docs/INSTRUCTIONS.md">link naar de instruct</a>)
@@ -41,7 +41,7 @@ laten zien in mijn profielkaartje
 
 
 ## Installatie
-zorg dat je dit geinstalleerd hebt voordat je dit project lokaal wilt gaan gebruiken
+zorg dat je dit geinstalleerd hebt voordat je dit project lokaal wilt gaan gebruiken.
 
 <ul>
    <li>
@@ -67,10 +67,10 @@ Volg deze stappen om dit project lokaal op te zetten in de terminal van je code 
    npm run dev
    ```
    
-wil je vanaf scratch een sveltekit project opstarten ga naar <a href="https://github.com/yujing-student/your-tribe-for-life-profile-card?tab=readme-ov-file#creating-a-project">create a project</a>
+wil je vanaf scratch een sveltekit project opstarten ga naar <a href="https://github.com/yujing-student/your-tribe-for-life-profile-card?tab=readme-ov-file#creating-a-project">create a project</a>.
 
 ## Gebruik
-Je kan dit profielkaartje bekijken en contact met mij opnemen op linkedin voor vragen en je kan geen aanpassingen maken in deze repository dus als je dit project qua code wilt bekijken
+Je kan dit profielkaartje bekijken en contact met mij opnemen op linkedin voor vragen <br>Je kan geen aanpassingen maken in deze repository dus als je dit project qua code wilt bekijken
 kan je dit hier zien :[https://github.com/auth/github_editor?redirect=%2Fyujing-student%2Fyour-tribe-for-life-profile-card&requestId=84307a3a-22cc-409e-bd29-b913af521f3f](https://github.dev/yujing-student/your-tribe-for-life-profile-card)
 
 ## Bronnen
