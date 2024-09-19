@@ -1,6 +1,6 @@
 # Profile card
 
-In dit project heb ik een profielkaartje gemaakt in svelte
+In dit project heb ik een profielkaartje gemaakt met het framework svelte en ik heb de data opgehaald uit de cms van directus 
 
 ## Inhoudsopgave
 
@@ -35,6 +35,8 @@ laten zien in mijn profielkaartje
 - Directus SDK
 - Vite
 - Vercel
+- Javascript
+- Css
 
 
 
@@ -43,7 +45,7 @@ zorg dat je dit geinstalleerd hebt voordat je dit project lokaal wilt gaan gebru
 
 <ul>
    <li>
-      cod editor zoals visual studio code of webstorm
+      code editor zoals visual studio code of webstorm
    </li>
 </ul>
 
@@ -60,10 +62,7 @@ Volg deze stappen om dit project lokaal op te zetten in de terminal van je code 
    ```bash
    npm install
 
-4. Installeer SvelteKit in de repository:
-
-
-5. Start de ontwikkelserver:
+4. Start de ontwikkelserver:
    ```bash
    npm run dev
    ```
@@ -71,7 +70,8 @@ Volg deze stappen om dit project lokaal op te zetten in de terminal van je code 
 wil je vanaf scratch een sveltekit project opstarten ga naar <a href="https://github.com/yujing-student/your-tribe-for-life-profile-card?tab=readme-ov-file#creating-a-project">create a project</a>
 
 ## Gebruik
-Je kan de website gebruiken als een introductie pagina voor de squad leden uit squad C en D
+Je kan dit profielkaartje bekijken en contact met mij opnemen op linkedin voor vragen en je kan geen aanpassingen maken in deze repository dus als je dit project qua code wilt bekijken
+kan je dit hier zien :[https://github.com/auth/github_editor?redirect=%2Fyujing-student%2Fyour-tribe-for-life-profile-card&requestId=84307a3a-22cc-409e-bd29-b913af521f3f](https://github.dev/yujing-student/your-tribe-for-life-profile-card)
 
 ## Bronnen
 - [SvelteKit Docs - Creating a project](https://kit.svelte.dev/docs/creating-a-project)
