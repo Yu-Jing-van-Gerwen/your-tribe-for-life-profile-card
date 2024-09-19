@@ -12,8 +12,6 @@
 <main>
 
     <div>
-
-
         <div class="grid-container ">
             <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
             <picture>
@@ -29,8 +27,6 @@
 
                 <img  src={data.persons.avatar} alt="foto van mij"/>
             </picture>
-
-            <!--        about me section moet een apart component worden-->
             <section class="animationfade">
                 <h2>Over mij</h2>
                 <p> Leeftijd: 20</p>
@@ -42,9 +38,6 @@
             <ActionButton/>
             <Moreinfo/>
         </div>
-
-
-
     </div>
 
 </main>
@@ -68,19 +61,25 @@
     .grid-container {
         border-radius: 1em;
         background: #00ff92;
-        /*background: linear-gradient(0deg, rgba(0, 239, 255, 1) 40%, #4fdd51 100%);*/
         background: linear-gradient(0deg, #00EFEF 40%, #4FDD51 100%);
-        box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1); /*ronde hoeken met een schadwu*/
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1);
         padding: 2em;
-        /*cursor: move;*/
         position: absolute;
 
         grid-row: 1;
 
     }
+    h1 {
+        color: #000000;
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
 
     section {
-        /*box-shadow: 14px 13px 0px 0px;*/
         background: #fff;
         font-weight: normal;
         border-radius: 0.25rem;
@@ -88,6 +87,7 @@
         display: grid;
         margin-top: 1.5em;
     }
+
 
     @media (max-width: 705px) {
         div:nth-child(1) {
@@ -98,38 +98,29 @@
         @keyframes slideInLeftMobile {
             0% {
                 top: -100%;
-                /*left: 25%;*/
             }
             100% {
                 top: 0;
                 left: 5%;
             }
         }
+        .grid-container {
+            animation: slideInLeftMobile 5s forwards;
+            min-width: 200px;
+            max-width: 400px;
+        }
+
         img {
             min-width: 200px;
             max-width: 250px;
         }
 
-        .grid-container {
-            animation: slideInLeftMobile 5s forwards;
-            min-width: 200px;
-            max-width: 400px;
-
-
-        }
 
 
     }
 
 
-    h1 {
-        color: #000000;
-        font-size: 2em;
-    }
 
-    h2 {
-        font-size: 1.5em;
-    }
 
     /*ipad en desktop*/
     @media (min-width: 705px) {
@@ -156,11 +147,9 @@
             0% {
                 left: -100%;
                 top: 5%;
-                /*top: 7%; !* Center vertically *!*/
             }
             100% {
-                left: 5%; /* Center horizontally */
-                /*top: 7%; !* Center vertically *!*/
+                left: 5%;
             }
         }
 
@@ -195,11 +184,9 @@
             0% {
                 left: -100%;
                 top: 5%;
-                /*top: 7%; !* Center vertically *!*/
             }
             100% {
-                left: 15%; /* Center horizontally */
-                /*top: 7%; !* Center vertically *!*/
+                left: 15%;
             }
         }
     }
@@ -212,11 +199,9 @@
             0% {
                 left: -100%;
                 top: 5%;
-                /*top: 7%; !* Center vertically *!*/
             }
             100% {
-                left: 20%; /* Center horizontally */
-                /*top: 7%; !* Center vertically *!*/
+                left: 20%;
             }
         }
     }
