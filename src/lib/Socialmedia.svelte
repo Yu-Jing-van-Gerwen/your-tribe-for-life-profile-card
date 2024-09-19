@@ -5,14 +5,13 @@
     import linkedin from "$lib/images/linkedin.jpg";
     import githublogo from "$lib/images/github-logo.png";
 
-    export let data;
+
 </script>
-<section class="socialmedia whitebackground animationfade"><!--social-media-->
+<section class="socialmedia whitebackground animationfade">
     <h2>Social media</h2>
-    <ul class="icons-grid">
+    <ul>
         <li>
             <a href="https://github.com/yujing-student">
-                <!--						<img src="/images/github-logo.png" width="40px">-->
                 <picture>
                     <source
                             srcset="{githublogo}?format=avif"
@@ -22,24 +21,14 @@
                             srcset="{githublogo}?format=webp"
                             type="image/webp"
                     />
-                    <img class="logo" src={githublogo} alt="GitHub"/>
+                    <img src={githublogo} alt="GitHub"/>
                 </picture>
             </a>
         </li>
         <li>
             <a href="https://www.linkedin.com/in/yu-jing-van-gerwen-a959431b7/">
-<!--                <picture>-->
 
-<!--                    <source-->
-<!--                            srcset="{linkedin}?format=webp"-->
-<!--                            type="image/webp"-->
-<!--                    />-->
-<!--                    <source-->
-<!--                            srcset="{linkedin}?format=avif"-->
-<!--                            type="image/avif"-->
-<!--                    />-->
-                    <img class="logo" src={linkedin} alt="linkedin"/>
-<!--                </picture>-->
+                    <img  src={linkedin} alt="linkedin"/>
             </a>
         </li>
     </ul>
@@ -63,7 +52,7 @@
         margin-top: -1em;
 
     }
-    .logo{
+    img{
         width: 40px;
     }
     .whitebackground{

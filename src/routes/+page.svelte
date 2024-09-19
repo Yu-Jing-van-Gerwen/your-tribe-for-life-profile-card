@@ -11,8 +11,7 @@
 
 <main>
 
-    <div>
-        <div class="grid-container ">
+        <div>
             <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
             <picture>
                 <source
@@ -38,27 +37,19 @@
             <ActionButton/>
             <Moreinfo/>
         </div>
-    </div>
 
 </main>
 
 
 <style>
     main {
-        display: grid;
-        justify-content: center;
-        align-items: center;
         font-family: open sans, Arial, serif;
         line-height: 1.5;
         font-size: 16px;
         scroll-behavior: smooth;
     }
 
-
-    div:nth-child(1){
-        position: absolute;
-    }
-    .grid-container {
+    div:nth-child(1)  {
         border-radius: 1em;
         background: #00ff92;
         background: linear-gradient(0deg, #00EFEF 40%, #4FDD51 100%);
@@ -90,11 +81,13 @@
 
 
     @media (max-width: 705px) {
+
+
         div:nth-child(1) {
-
             animation: slideInLeftMobile 5s forwards;
+            min-width: 200px;
+            max-width: 400px;
         }
-
         @keyframes slideInLeftMobile {
             0% {
                 top: -100%;
@@ -104,11 +97,7 @@
                 left: 5%;
             }
         }
-        .grid-container {
-            animation: slideInLeftMobile 5s forwards;
-            min-width: 200px;
-            max-width: 400px;
-        }
+
 
         img {
             min-width: 200px;
@@ -124,7 +113,7 @@
 
     /*ipad en desktop*/
     @media (min-width: 705px) {
-        .grid-container {
+        div:nth-child(1)  {
             display: grid;
             grid-template-rows: 4em auto auto auto;
             grid-template-columns: auto auto auto;
@@ -134,14 +123,14 @@
             padding: 2em;
             min-width: 450px;
 
+            animation: slideInDesktop 5s forwards;
+
         }
         section{
             width: 13em;
         }
 
-        div:nth-child(1) {
-            animation: slideInDesktop 5s forwards;
-        }
+
 
         @keyframes slideInDesktop {
             0% {
@@ -211,7 +200,6 @@
         -webkit-animation: fadeIntest 10s;
         -moz-animation: fadeIntest 12s;
         -o-animation: fadeIntest 12s;
-        -ms-animation: fadeIntest 12s;
     }
 
     @keyframes fadeIntest {

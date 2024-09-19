@@ -1,8 +1,3 @@
-<!--https://dev.to/webdeasy/top-20-css-buttons-animations-f41-->
-<!--https://codepen.io/twhite96/embed/brryVq?height=600&default-tab=result&embed-version=2#result-box-->
-
-<!--de span is noodzakelijk vanege de tekst-->
-
 <script>
     let buttonMore;
     let div;
@@ -18,7 +13,6 @@
 
     }
 </script>
-<!--    <a  class="moreinfo" href="#moreinfo"><span>druk voor meer info</span></a>-->
 <a href="#info" on:click={showmore} class="moreinfo pulse">
     <span>druk voor meer info</span>
 </a>
@@ -26,13 +20,12 @@
 <style>
 
     .moreinfo {
-       margin: 0 0 0 1em;
         border-radius: 4px;
         padding: 16px;
         display: grid;
         grid-row: 3;
         grid-column: 1;
-        margin-top: 1em;
+        margin: 1em 0 0 1em;
         line-height: 40px;
         font-family: sans-serif;
         text-decoration: none;
