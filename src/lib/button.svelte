@@ -4,7 +4,6 @@
 <!--de span is noodzakelijk vanege de tekst-->
 
 <script>
-    import {onMount} from "svelte";
     let buttonMore;
     let div;
     function showmore() {
@@ -15,10 +14,12 @@
 
         buttonMore.scrollIntoView('.nonvisible-open')
         buttonMore.disabled = true;
+        buttonMore.classList.remove("pulse");
+
     }
 </script>
 <!--    <a  class="moreinfo" href="#moreinfo"><span>druk voor meer info</span></a>-->
-<a href="#info" on:click={showmore} class="moreinfo">
+<a href="#info" on:click={showmore} class="moreinfo pulse">
     <span>druk voor meer info</span>
 </a>
 
@@ -27,7 +28,7 @@
 
 <style>
     .moreinfo {
-        box-shadow: 14px 13px 0px 0px;
+
         background: #fff;
         font-weight: normal;
         height: 44px;
@@ -47,7 +48,13 @@
         text-align: center;
         position: relative;
         transition: all .35s;
+
+    }
+
+    /*https://www.florin-pop.com/blog/2019/03/css-pulse-effect/*/
+    .pulse{
         animation: pulse 2s infinite;
+        box-shadow: 14px 13px 0 0;
     }
     @keyframes pulse {
         0% {
@@ -57,7 +64,7 @@
 
         50% {
             transform: scale(1.25);
-            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
         }
 
         100% {
@@ -85,9 +92,6 @@
         transition: all .35s;
     }
 
-    a:hover{
-        /*color: red;*/
-    }
 
     a:hover:after{
         width: 100%;

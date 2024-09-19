@@ -1,14 +1,11 @@
 <script>
-    import linkedin from "$lib/images/linkedin.png";
 
     export let data;
     import Moreinfo from '$lib/MoreInfo.svelte';
     import ActionButton from '$lib/button.svelte';
     import SocialMedia from '$lib/Socialmedia.svelte';
 
-    // dit zijn functies die je kan gebrruiken in svelte nu niet noodzakelijk
-    import {fade} from 'svelte/transition';
-    import {onMount} from 'svelte';
+
 
 </script>
 
