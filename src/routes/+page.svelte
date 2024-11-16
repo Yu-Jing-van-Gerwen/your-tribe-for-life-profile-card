@@ -52,8 +52,7 @@
 
     div:nth-child(1)  {
         border-radius: 1em;
-        background: #00ff92;
-        background: linear-gradient(0deg, #00EFEF 40%, #4FDD51 100%);
+        background: #c0dfd1 ;
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, .1);
         padding: 2em;
         position: absolute;
