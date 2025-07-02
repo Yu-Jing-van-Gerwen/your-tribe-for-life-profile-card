@@ -11,7 +11,7 @@
     <h2>Social media</h2>
     <ul>
         <li>
-            <a href="https://github.com/yujing-student">
+            <a href="https://github.com/Yu-Jing-van-Gerwen">
                 <picture>
                     <source
                             srcset="{githublogo}?format=avif"

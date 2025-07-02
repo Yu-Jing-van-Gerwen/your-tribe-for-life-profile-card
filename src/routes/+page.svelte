@@ -13,7 +13,7 @@
 
 
         <div>
-            <h1>{data.persons.name}  {data.persons.prefix}  {data.persons.surname}</h1>
+            <h1>{data.persons.name}  </h1>
             <picture>
                 <source
                         srcset="{data.persons.avatar}?format=webp"
